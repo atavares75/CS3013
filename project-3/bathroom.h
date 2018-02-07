@@ -11,17 +11,22 @@
 enum gender {MALE, FEMALE};
 
 struct Bathroom {
-	gender curGender;
+	enum gender curGender;
     int population;
-    long occupiedTime;
+};
 
+struct BathroomData {
+	long occupiedTime;
+	long vacantTime;
+	int avgQueueLength;
+	int avgPopulation;
 };
 
 /*
  * Enter the bathroom, but wait until vacant if occupied
  * by the opposite gender. Set state accordingly.
  */
-void Enter(gender g);
+void Enter(enum gender g);
 
 /*
  * Leave bathroom. Set state to "vacant" if this thread is the
@@ -35,7 +40,8 @@ void Leave(void);
 void Initialize(void);
 
 /*
- *
+ *	Finalizes the execution of the bathroom.
  */
+void Finalize(void);
 
 #endif /* BATHROOM_H_ */

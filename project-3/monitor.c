@@ -8,6 +8,8 @@
 
 /*
  *  Note: Not really sure what to do with these methods, we'll figure it out.
+ *
+ *  TODO: Write a monitor using semaphores
  */
 
 

@@ -1,25 +1,25 @@
-PROJECT_ROOT = $(dir $(abspath $(lastword $(MAKEFILE_LIST))))
+CC=gcc
+CFLAGS=-I. -Werror -Wall -O0 -g
+OBJ=main.o person.o monitor.o
+EXE=bathroomSim
 
-OBJS = main.o
+all: $(EXE)
 
-ifeq ($(BUILD_MODE),debug)
-	CFLAGS += -g
-else ifeq ($(BUILD_MODE),run)
-	CFLAGS += -O2
-else
-	$(error Build mode $(BUILD_MODE) not supported by this Makefile)
-endif
+$(EXE): $(OBJ)
+	$(CC) $(OBJ) -o bathroomSim
+	echo "Compilation completed."
+	
+main.o: main.c
+	$(CC) $(CFLAGS) main.c
+	echo "main.o has been compiled."
 
-all:	project-3
-
-project-3:	$(OBJS)
-	$(CXX) -o $@ $^
-
-%.o:	$(PROJECT_ROOT)%.cpp
-	$(CXX) -c $(CFLAGS) $(CXXFLAGS) $(CPPFLAGS) -o $@ $<
-
-%.o:	$(PROJECT_ROOT)%.c
-	$(CC) -c $(CFLAGS) $(CPPFLAGS) -o $@ $<
-
+monitor.o: monitor.c
+	$(CC) $(CFLAGS) monitor.c
+	echo "monitor.o has been compiled."
+	
+person.o: person.c
+	$(CC) $(CFLAGS) person.c
+	echo "person.c has been compiled."
+	
 clean:
-	rm -fr project-3 $(OBJS)
+	rm -r $(EXE) $(OBJ)

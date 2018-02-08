@@ -6,11 +6,13 @@
  */
 #include <pthread.h>
 
+
 /*
  *  Note: Not really sure what to do with these methods, we'll figure it out.
  *
  *  TODO: Write a monitor using semaphores
  */
+
 
 
    int pthread_cond_init(pthread_cond_t * cond, const pthread_cond_attr *attr);

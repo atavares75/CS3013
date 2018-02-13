@@ -12,19 +12,20 @@
 
 struct Person {
 	pthread_t *thread;
-	enum gender gender;
-	int meanWaitTime;
-	int meanStayTime;
-	int loopCount;
+	Gender gender;
+	unsigned long totalWaitTime;
+	unsigned long totalStayTime;
+	unsigned int minimumWaitTime;
+	unsigned int maximumWaitTime;
+	unsigned int loopCount;
 };
 
 // generates a random stay/wait time
 void genTime(int* time);
 void genLoops(int* avgLoops);
-void genGender(enum gender* gender);
+void genGender(Gender* gender);
 
 // implementation of thread
-void Individual(struct Person);
-
+void Individual(struct Person* p);
 
 #endif /* PERSON_H_ */

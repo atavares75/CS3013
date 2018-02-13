@@ -12,24 +12,17 @@
 #ifndef BATHROOM_H_
 #define BATHROOM_H_
 
-enum state {
+typedef enum Gender {
 	MALE, FEMALE
-};
+} g;
 
 typedef struct Bathroom_Object {
-	enum state curGender;
+	enum gender curGender;
 	int population;
-	//sem_t bathroom_lock;
-	mutex lock;
-	long occupiedTime;
-	long vacantTime;
-	int avgQueueLength;
-	int avgPopulation;
-	sem_t men_waiting_lock;
-	sem_t women_waiting_lock;
-	int men_waiting;
-	int women_waiting;
+	pthread_mutex_lock lock;
+	int queueLength;
 } Bathroom;
+
 
 
 /*
@@ -37,7 +30,7 @@ typedef struct Bathroom_Object {
  * by the opposite gender. Set state accordingly.
  */
 void Enter(enum gender g) {
-	sem_wait(&bathroom->lock);
+	
 	//checks if bathroom is occupied by persons of the opposite gender
 	if (bathroom->population != 0 && bathroom->curGender != g) {
 		if (g == MALE) {

@@ -21,8 +21,11 @@ typedef struct Bathroom_Object {
 	int population;
 	pthread_mutex_lock lock;
 	int queueLength;
+	pthread_cond_t empty;
 } Bathroom;
 
+
+extern Bathroom * const bathroom;
 
 
 /*
@@ -30,26 +33,18 @@ typedef struct Bathroom_Object {
  * by the opposite gender. Set state accordingly.
  */
 void Enter(enum gender g) {
-	
+	pthread_mutex_lock(bathroom->lock);
 	//checks if bathroom is occupied by persons of the opposite gender
-	if (bathroom->population != 0 && bathroom->curGender != g) {
-		if (g == MALE) {
-			bathroom->men_waiting++;
-			sem_post(&bathroom->lock);
-			sem_wait(&bathroom->men_waiting_lock);
-		} else {
-			bathroom->women_waiting++;
-			sem_post(&bathroom->lock);
-			sem_wait(&bathroom->women_waiting_lock);
-		}
-
-	} else {
-		bathroom->population++;
-		if (bathroom->population == 1) {
-			bathroom->curGender = g;
-		}
-		sem_post(&bathroom->lock);
+	while (bathroom->population != 0 && bathroom->curGender != g) {
+		
+		pthread_cond_wait(bathroom->empty, bathroom->lock);
 	}
+	bathroom->population++;
+	if (bathroom->population == 1) {
+		bathroom->curGender = g;
+	}
+	pthread_mutex_unlock();
+
 
 }
 
@@ -60,51 +55,25 @@ void Enter(enum gender g) {
  * last one out.
  */
 void Leave() {
-	sem_wait(&bathroom->lock);
+	pthread_mutex_lock(bathroom->lock);
 	bathroom->population--;
 	if (bathroom->population == 0) {
-		bathroom->curGender = VACANT;
-		if (bathroom->women_waiting > 0) {
-			while (bathroom->women_waiting > 0) {
-				bathroom->women_waiting--;
-				bathroom->population++;
-				sem_post(&bathroom->women_waiting_lock);
-			}
-		} else if (bathroom->men_waiting > 0) {
-			while (bathroom->women_waiting > 0) {
-				bathroom->men_waiting--;
-				bathroom->population++;
-				sem_post(&bathroom->men_waiting_lock);
-			}
-		}
+		bathroom->curGender = 0;
+		pthread_cond_broadcast(bathroom->empty);
 	}
-	sem_post(&bathroom->lock);
+	pthread_mutex_unlock(bathroom->lock);
 }
 
 /*
  * Initializes the bathroom. Should be only called by master thread.
  */
 void Initialize() {
-	bathroom->curGender = VACANT;
+	bathroom->curGender = NULL;
 	bathroom->population = 0;
-	bathroom->men_waiting = 0;
-	bathroom->women_waiting = 0;
-	if (sem_init(&bathroom->lock, 0, 1) < 0) {
-		perror("sem_init");
-		exit(1);
-	}
-	if (sem_init(&bathroom->men_waiting_lock, 0, 1) < 0) {
-		perror("sem_init");
-		exit(1);
-	}
-	if (sem_init(&bathroom->women_waiting_lock, 0, 1) < 0) {
-		perror("sem_init");
-		exit(1);
-	}
-	bathroom->occupiedTime = 0;
-	bathroom->vacantTime = 0;
-	bathroom->avgQueueLength = 0;
-	bathroom->avgPopulation = 0;
+	bathroom->waiting = 0;
+	bathroom->queueLength = 0;
+	bathroom->lock = PTHREAD_MUTEX_INITIALIZER;
+	bathroom->empty = PTHREAD_COND_INITIALIZER;
 }
 
 /*

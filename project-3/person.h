@@ -13,11 +13,11 @@
 struct Person {
 	pthread_t *thread;
 	Gender gender;
-	long totalWaitTime;
-	long totalStayTime;
-	int minimumWaitTime;
-	int maximumWaitTime;
-	int loopCount;
+	unsigned long totalWaitTime;
+	unsigned long totalStayTime;
+	unsigned int minimumWaitTime;
+	unsigned int maximumWaitTime;
+	unsigned int loopCount;
 };
 
 // generates a random stay/wait time
@@ -26,7 +26,6 @@ void genLoops(int* avgLoops);
 void genGender(Gender* gender);
 
 // implementation of thread
-void Individual(struct Person);
-
+void Individual(struct Person* p);
 
 #endif /* PERSON_H_ */

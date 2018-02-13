@@ -5,7 +5,7 @@
  *      Author: L. Gonslves
  */
 
-#include <pthread.h>
+#include </usr/include/pthread.h>
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -17,7 +17,7 @@ typedef enum Gender {
 } g;
 
 typedef struct Bathroom_Object {
-	enum gender curGender;
+	Gender curGender;
 	int population;
 	pthread_mutex_lock lock;
 	int queueLength;

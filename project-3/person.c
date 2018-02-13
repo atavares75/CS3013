@@ -13,7 +13,7 @@
 #include "person.h"
 
 /* Individual Thread Routine */
-void Individual(struct person){
+void Individual(struct Person){
 
 }
 

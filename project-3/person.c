@@ -14,7 +14,7 @@
 #include <unistd.h>
 #include <time.h>
 
-#define RAND_MAX 99
+
 
 /* Individual Thread Routine */
 void *Individual(void * p){
@@ -22,10 +22,10 @@ void *Individual(void * p){
 
 	for(int i = 0; i < prsn->loopCount; i++){
 
-		long waitTime;
-		genTime(&waitTime);
+		long arrivalTime;
+		genTime(&arrivalTime, prsn->meanArrivalTime);
 
-		sleep(waitTime);
+		sleep(arrivalTime);
 
 		clock_t t;
 		t = clock();
@@ -33,8 +33,10 @@ void *Individual(void * p){
 		t = clock() - t;
 		double timeWaiting = ((double) t)/CLOCKS_PER_SEC;
 
+		//TODO: figure out where to store waitTime
+
 		long stayTime;
-		genTime(stayTime);
+		genTime(&stayTime, prsn->meanStayTime);
 
 		sleep(stayTime);
 
@@ -46,8 +48,13 @@ void *Individual(void * p){
 }
 
 /* Helpers */
-void genTime(long* time){
-	//TODO: define random time generation
+void genTime(long* time, long mean){
+	//TODO: define random time generation, check project instructions for details on how to do this
+	long t = 0;
+	long stdev = mean/2;
+	while(t <= 0){
+
+	}
 	
 }
 void genLoops(int* avgLoops){
@@ -55,7 +62,6 @@ void genLoops(int* avgLoops){
 
 }
 void genGender(Gender *gender){
-	//TODO: define random gender generator
 	int num = rand();
 
 	if(num%2 == 0){

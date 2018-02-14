@@ -26,7 +26,7 @@ int main(int argc, char **argv) {
 	int seed;
 
 	/* Argument checking */
-	if (argc > MAX_ARGS) {
+	if (argc > MAX_ARGS || argc < 5) {
 		printf("Number of arguments is invalid, please try again.\n");
 		exit(1);
 	} else {

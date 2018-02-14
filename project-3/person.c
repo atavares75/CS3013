@@ -13,11 +13,11 @@
 #include "person.h"
 #include <unistd.h>
 #include <time.h>
-
+#include <math.h>
 
 
 /* Individual Thread Routine */
-void *Individual(void * p){
+void* Individual(void * p){
 	Person *prsn = (Person *)p;
 
 	for(int i = 0; i < prsn->loopCount; i++){
@@ -50,8 +50,7 @@ void *Individual(void * p){
 
 		Leave();
 	}
-	//TODO: Figure out how to print thread number, don't know if what I wrote is correct
-	pthread_t tid = pthread_self();
+	pthread_t tid = *(prsn->thread);
 	printf("Thread ID: %lu\n", (unsigned long int)tid);
 
 	if(prsn->gender == MALE){
@@ -67,32 +66,46 @@ void *Individual(void * p){
 	printf("Average time spent in the queue in seconds: %d", averageTimeSpentInQueue);
 	printf("Maximum time spent in the queue in seconds: %d", (int)prsn->maximumWaitTime);
 
+	return NULL;
 }
 
 
 /* Helpers */
 void genTime(long* time, long mean){
 	//TODO: define random time generation, check project instructions for details on how to do this
-	long t = 0;
-	long stdev = mean/2;
-	while(t <= 0){
+	float stdev = 2.78;
 
-	}
+	float a = drand48();
+	float b = drand48();
 	
+	int z = sqrt(-2 * log(a)) * cos(2 * M_PI * b);
+
+	z = (stdev * z) + mean;
+
+	*time = z;
 }
 
-void genLoops(int* avgLoops){
+void genLoops(int* loops, int mean){
 	//TODO: define random number of loops generation
+	float stdev = 2.78;
 
+	float a = drand48();
+	float b = drand48();
+
+	int z = sqrt(-2 * log(a)) * cos(2 * M_PI * b);
+
+	z = (stdev * z) + mean;
+
+	*loops = z;
 }
 
 void genGender(Gender *gender){
 	int num = rand();
 
 	if(num%2 == 0){
-		gender = MALE;
+		*gender = MALE;
 	} else{
-		gender = FEMALE;
+		*gender = FEMALE;
 	}
 
 }

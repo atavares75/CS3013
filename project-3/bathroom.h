@@ -5,12 +5,12 @@
  *      Author: L. Gonslves
  */
 
-#include <pthread.h>
-#include <stdlib.h>
-#include <stdio.h>
-
 #ifndef BATHROOM_H_
 #define BATHROOM_H_
+
+#include </usr/include/pthread.h>
+#include <stdlib.h>
+#include <stdio.h>
 
 typedef enum Gender {
 	MALE, FEMALE
@@ -52,11 +52,10 @@ void Initialize();
  */
 void Finalize();
 
-
 /*
  *	Keeps track of time bathroom is vacant and time it is occupied
  */
-void *Time_Keeper();
+void* Time_Keeper();
 
 
 #endif /* BATHROOM_H_ */

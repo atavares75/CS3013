@@ -5,14 +5,12 @@
  *
  */
 #include "bathroom.h"
+#include "person.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include "person.h"
+#include </usr/include/pthread.h>
 
 #define MAX_ARGS 6
-
-
-
 
 /* Global, unchangable pointer to bathroom struct, to be initialized */
 Bathroom * const bathroom;
@@ -37,7 +35,10 @@ int main(int argc, char **argv) {
 
 		if (argc == MAX_ARGS) {
 			seed = atoi(argv[5]);
+			srand48(seed);
 		}
+		else
+			srand48(time(NULL));
 	}
 
 	Person personArray[nUsers];
@@ -60,10 +61,7 @@ int main(int argc, char **argv) {
 		genGender(&g);
 
 		int loops;
-		genLoops(&loops);
-
-		long waitTime;
-		genTime(&waitTime);
+		genLoops(&loops, avgLoops);
 
 		personArray[p].gender = g;
 		personArray[p].maximumWaitTime = 0;
@@ -75,7 +73,7 @@ int main(int argc, char **argv) {
 		personArray[p].meanStayTime = meanStay;
 
 		
-		if((r_code = pthread_create(&people[p], NULL, Individual, &personArray[p])) != 0){
+		if((r_code = pthread_create(&people[p], NULL, Individual, &personArray[p]) != 0)){
 			printf("Error creating thread");
 			exit(r_code);
 		}

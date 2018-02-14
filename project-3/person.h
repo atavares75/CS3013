@@ -14,7 +14,7 @@
 
 
 struct Person_Object {
-	pthread_t *thread;
+	pthread_t thread;
 	Gender gender;
 	double totalWaitTime;
 	unsigned long totalStayTime;

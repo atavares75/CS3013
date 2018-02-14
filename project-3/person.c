@@ -50,7 +50,7 @@ void* Individual(void * p){
 
 		Leave();
 	}
-	pthread_t tid = *(prsn->thread);
+	pthread_t tid = prsn->thread;
 	printf("Thread ID: %lu\n", (unsigned long int)tid);
 
 	if(prsn->gender == MALE){
@@ -59,12 +59,12 @@ void* Individual(void * p){
 		printf("Gender: Female\n");
 	}
 
-	printf("Number of loops: %d", (int)prsn->loopCount);
+	printf("Number of loops: %d\n", (int)prsn->loopCount);
 
 	int averageTimeSpentInQueue = (int)prsn->totalWaitTime/(int)prsn->loopCount;
-	printf("Minimum time spent in the queue in seconds: %d", (int)prsn->minimumWaitTime);
-	printf("Average time spent in the queue in seconds: %d", averageTimeSpentInQueue);
-	printf("Maximum time spent in the queue in seconds: %d", (int)prsn->maximumWaitTime);
+	printf("Minimum time spent in the queue in seconds: %d\n", (int)prsn->minimumWaitTime);
+	printf("Average time spent in the queue in seconds: %d\n", averageTimeSpentInQueue);
+	printf("Maximum time spent in the queue in seconds: %d\n\n", (int)prsn->maximumWaitTime);
 
 	return NULL;
 }

@@ -75,7 +75,7 @@ int main(int argc, char **argv) {
 		personArray[p].meanStayTime = meanStay;
 
 		
-		if((r_code = pthread_create(personArray[p].thread, NULL, Individual, &personArray[p]) != 0)){
+		if((r_code = pthread_create(&personArray[p].thread, NULL, Individual, &personArray[p]) != 0)){
 			printf("Error creating thread\n");
 			exit(r_code);
 		}
@@ -83,7 +83,7 @@ int main(int argc, char **argv) {
 	}
 
 	for(int j = 0; j < nUsers; j++){
-		pthread_join(*personArray[j].thread, NULL);
+		pthread_join(personArray[j].thread, NULL);
 	}
 
 	//ends timer thread

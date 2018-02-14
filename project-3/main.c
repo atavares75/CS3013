@@ -4,14 +4,15 @@
  * 	Authors: L. Gonsalves, A. Tavares
  *
  */
-#include "bathroom.h"
+#include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include "person.h"
+#include "bathroom.h"
 
 #define MAX_ARGS 6
 
-
+//TODO: Fix makefile
 
 
 /* Global, unchangable pointer to bathroom struct, to be initialized */
@@ -41,6 +42,8 @@ int main(int argc, char **argv) {
 	}
 
 	Person personArray[nUsers];
+
+	printf("Seed: %d\n", seed);
 
 	
 	Initialize();

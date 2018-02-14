@@ -21,7 +21,7 @@ struct Person {
 };
 
 // generates a random stay/wait time
-void genTime(int* time);
+void genTime(long* time);
 void genLoops(int* avgLoops);
 void genGender(Gender* gender);
 

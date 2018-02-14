@@ -13,7 +13,7 @@
 #include "person.h"
 
 /* Individual Thread Routine */
-void Individual(struct Person){
+void Individual(struct Person* p){
 
 }
 
@@ -24,6 +24,6 @@ void genTime(long* time){
 void genLoops(int* avgLoops){
 	//TODO: define random number of loops generation
 }
-void genGender(enum gender* gender){
+void genGender(Gender* gender){
 	//TODO: define random gender generator
 }

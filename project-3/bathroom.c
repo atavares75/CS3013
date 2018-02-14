@@ -5,14 +5,6 @@
 */
 #include "bathroom.h"
 
-typedef struct Bathroom_Object {
-	gender curGender;
-	int population;
-	pthread_mutex_t lock;
-	int queueLength;
-	pthread_cond_t empty;
-} Bathroom;
-
 
 extern Bathroom * const bathroom;
 
@@ -21,7 +13,7 @@ extern Bathroom * const bathroom;
  * Enter the bathroom, but wait until vacant if occupied
  * by the opposite gender. Set state accordingly.
  */
-void Enter(gender g) {
+void Enter(Gender g) {
 	pthread_mutex_lock(&bathroom->lock);
 	//checks if bathroom is occupied by persons of the opposite gender
 	while (bathroom->population != 0 && bathroom->curGender != g) {
@@ -68,5 +60,5 @@ void Initialize() {
  *	Finalizes the execution of the bathroom.
  */
 void Finalize(){
-
+	//do this after we figure out how we are going to gather statistics
 }

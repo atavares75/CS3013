@@ -14,13 +14,21 @@
 
 typedef enum Gender {
 	MALE, FEMALE
-} gender;
+} Gender;
+
+typedef struct Bathroom_Object {
+	Gender curGender;
+	int population;
+	pthread_mutex_t lock;
+	int queueLength;
+	pthread_cond_t empty;
+} Bathroom;
 
 /*
  * Enter the bathroom, but wait until vacant if occupied
  * by the opposite gender. Set state accordingly.
  */
-void Enter(gender g);
+void Enter(Gender g);
 
 /*
  * Leave bathroom. Set state to "vacant" if this thread is the

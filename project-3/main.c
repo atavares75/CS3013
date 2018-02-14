@@ -7,6 +7,7 @@
 #include "bathroom.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include "person.h"
 
 #define MAX_ARGS 6
 

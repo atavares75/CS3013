@@ -73,7 +73,7 @@ void Finalize(){
 	printf("Number of usages: %d\n", bathroom->numUsages);
 	printf("Total time bathroom was vacant in seconds: %ld\n", bathroom->timeVacant);
 	printf("Total time bathroom was occupied in seconds: %ld\n", bathroom->timeOccupied);
-	//TODO: figure out how to keep track of averaage queue length and average number of persons in bathroom
+	//TODO: figure out how to keep track of average queue length and average number of persons in bathroom
 
 }
 

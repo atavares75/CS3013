@@ -19,8 +19,8 @@ int main(int argc, char **argv) {
 	/* Variables */
 	int nUsers;
 	int avgLoops;
-	long meanArrival;
-	long meanStay;
+	double meanArrival;
+	double meanStay;
 	int seed;
 
 	/* Argument checking */
@@ -31,8 +31,8 @@ int main(int argc, char **argv) {
 	} else {
 		nUsers = atoi(argv[1]);
 		avgLoops = atoi(argv[2]);
-		meanArrival = atoi(argv[3]);
-		meanStay = atoi(argv[4]);
+		meanArrival = atof(argv[3]);
+		meanStay = atof(argv[4]);
 
 		if (argc == MAX_ARGS) {
 			seed = atoi(argv[5]);

@@ -29,7 +29,7 @@ typedef struct Person_Object Person;
 
 
 // generates a random stay/wait time
-void genTime(long* time, long mean);
+void genTime(double* time, double mean);
 void genLoops(int* avgLoops, int mean);
 void genGender(Gender* gender);
 

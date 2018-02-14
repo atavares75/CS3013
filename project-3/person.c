@@ -34,18 +34,41 @@ void *Individual(void * p){
 		double timeWaiting = ((double) t)/CLOCKS_PER_SEC;
 
 		//TODO: figure out where to store waitTime
+		if(prsn->maximumWaitTime < timeWaiting){
+			prsn->maximumWaitTime = (int)timeWaiting;
+		}
+		if(prsn->minimumWaitTime > timeWaiting){
+			prsn->minimumWaitTime = (int)timeWaiting;
+		}
+		prsn->totalWaitTime += timeWaiting;
 
 		long stayTime;
 		genTime(&stayTime, prsn->meanStayTime);
+		prsn->totalStayTime += stayTime;
 
 		sleep(stayTime);
 
 		Leave();
 	}
+	//TODO: Figure out how to print thread number, don't know if what I wrote is correct
+	pthread_t tid = pthread_self();
+	printf("Thread ID: %lu\n", (unsigned long int)tid);
 
+	if(prsn->gender == MALE){
+		printf("Gender: Male\n");
+	} else{
+		printf("Gender: Female\n");
+	}
 
+	printf("Number of loops: %d", (int)prsn->loopCount);
+
+	int averageTimeSpentInQueue = (int)prsn->totalWaitTime/(int)prsn->loopCount;
+	printf("Minimum time spent in the queue: %d", (int)prsn->minimumWaitTime);
+	printf("Average time spent in the queue: %d", averageTimeSpentInQueue);
+	printf("Maximum time spent in the queue: %d", (int)prsn->maximumWaitTime);
 
 }
+
 
 /* Helpers */
 void genTime(long* time, long mean){
@@ -57,10 +80,12 @@ void genTime(long* time, long mean){
 	}
 	
 }
+
 void genLoops(int* avgLoops){
 	//TODO: define random number of loops generation
 
 }
+
 void genGender(Gender *gender){
 	int num = rand();
 

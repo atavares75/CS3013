@@ -42,10 +42,11 @@ int main(int argc, char **argv) {
 
 	Person personArray[nUsers];
 
-	// TODO: Define bathroom initialization here (master thread)
+	
 	Initialize();
 
-	// TODO: Write code for thread initialization
+	pthread_t people[nUsers];
+	
 	/* Initialize a thread for each person */
 	for (int p = 0; p < nUsers; p++){
 		Gender g;
@@ -67,15 +68,16 @@ int main(int argc, char **argv) {
 		personArray[p].meanStayTime = meanStay;
 
 		int r_code;
-		pthread_t person;
-		if((r_code = pthread_create(&person, NULL, Individual, &personArray[p])) != 0){
+		if((r_code = pthread_create(&people[p], NULL, Individual, &personArray[p])) != 0){
 			printf("Error creating thread");
 			exit(r_code);
 		}
 
 	}
 
-	// TODO: Wait for threads to finish
+	for(int j = 0; j < nUsers; j++){
+		pthread_join(people[j], NULL);
+	}
 
 	Finalize();
 

@@ -2,7 +2,7 @@
  * person.c
  *
  *  Created on: Feb 7, 2018
- *      Author: L. Gonsalves
+ *      Author: L. Gonsalves, A. Tavares
  *
  *
  *     	Contains source file for generating random amounts of time,
@@ -14,7 +14,6 @@
 #include <unistd.h>
 #include <time.h>
 #include <math.h>
-
 
 
 /* Individual Thread Routine */
@@ -68,39 +67,46 @@ void *Individual(void * p){
 	printf("Average time spent in the queue in seconds: %d", averageTimeSpentInQueue);
 	printf("Maximum time spent in the queue in seconds: %d", (int)prsn->maximumWaitTime);
 
+	return  NULL;
 }
 
 
 /* Helpers */
 void genTime(long* time, long mean){
+	long t;
 	long stdev = mean/2;
 	double a, b;
 
 	a = drand48();
 	b = drand48();
 
-	z = sqrt(-2 * log(a)) * cos(2 * pi * b);
-	time = (long)(z * stdev + mean);	
+	double z = sqrt(-2 * log(a)) * cos(2 * M_PI * b);
+	t = (long)(z * stdev + mean);
+	time = &t;	
 }
 
 void genLoops(int* numLoops, int mean){
+	int l;
 	int stdev = mean/2;
 	double a, b;
 
 	a = drand48();
 	b = drand48();
 
-	z = sqrt(-2 * log(a)) * cos(2 * pi * b);
-	numLoops = (int)(z * stdev + mean);
+	double z = sqrt(-2 * log(a)) * cos(2 * M_PI * b);
+	l = (int)(z * stdev + mean);
+	numLoops = &l;
 }
 
 void genGender(Gender *gender){
 	int num = rand();
+	Gender male = MALE;
+	Gender female = FEMALE;
 
 	if(num%2 == 0){
-		gender = MALE;
+		gender = &male;
 	} else{
-		gender = FEMALE;
+		gender = &female;
 	}
 
 }

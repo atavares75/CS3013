@@ -2,7 +2,7 @@
  * person.h
  *
  *  Created on: Feb 7, 2018
- *      Author: L. Gonsalves
+ *      Author: L. Gonsalves, A. Tavares
  */
 #include "bathroom.h"
 #include </usr/include/pthread.h>

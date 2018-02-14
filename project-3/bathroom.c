@@ -58,11 +58,11 @@ void Initialize() {
 	pthread_mutex_init(&bathroom->lock, NULL);
 	pthread_cond_init(&bathroom->empty, NULL);
 
-	int numUsages = 0;
-	long timeVacant = 0;
-	long timeOccupied = 0;
+	bathroom->numUsages = 0;
+	bathroom->timeVacant = 0;
+	bathroom->timeOccupied = 0;
 	pthread_cond_init(&bathroom->vacant, NULL);
-	int flag = 1;
+	bathroom->flag = 1;
 }
 
 /*
@@ -71,8 +71,8 @@ void Initialize() {
 void Finalize(){
 	//do this after we figure out how we are going to gather statistics
 	printf("Number of usages: %d\n", bathroom->numUsages);
-	printf("Total time bathroom was vacant in seconds: %d\n", bathroom->timeVacant);
-	printf("Total time bathroom was occupied in seconds: %d\n", bathroom->timeOccupied);
+	printf("Total time bathroom was vacant in seconds: %ld\n", bathroom->timeVacant);
+	printf("Total time bathroom was occupied in seconds: %ld\n", bathroom->timeOccupied);
 	//TODO: figure out how to keep track of averaage queue length and average number of persons in bathroom
 
 }
@@ -102,4 +102,5 @@ void *Time_Keeper(){
 		
 	}
 	pthread_mutex_unlock(&bathroom->lock);
+	return NULL;
 }

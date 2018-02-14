@@ -2,7 +2,7 @@
  * bathroom.h
  *
  *  Created on: Feb 7, 2018
- *      Author: L. Gonslves
+ *      Author: L. Gonslves, A. Tavares
  */
 
 #include <pthread.h>

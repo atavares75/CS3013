@@ -46,6 +46,13 @@ int main(int argc, char **argv) {
 	Initialize();
 
 	pthread_t people[nUsers];
+	pthread_t timerThread;
+
+	int r_code;
+	if((r_code = pthread_create(&timerThread, NULL, Time_Keeper, NULL)) != 0){
+			printf("Error creating thread");
+			exit(r_code);
+		}	
 	
 	/* Initialize a thread for each person */
 	for (int p = 0; p < nUsers; p++){
@@ -67,7 +74,7 @@ int main(int argc, char **argv) {
 		personArray[p].meanArrivalTime = meanArrival;
 		personArray[p].meanStayTime = meanStay;
 
-		int r_code;
+		
 		if((r_code = pthread_create(&people[p], NULL, Individual, &personArray[p])) != 0){
 			printf("Error creating thread");
 			exit(r_code);
@@ -78,6 +85,15 @@ int main(int argc, char **argv) {
 	for(int j = 0; j < nUsers; j++){
 		pthread_join(people[j], NULL);
 	}
+
+	//ends timer thread
+	pthread_mutex_lock(&bathroom->lock);
+	bathroom->flag = 0;
+	//makes sure time keeper isn't stuck waiting for condition
+	pthread_cond_signal(&bathroom->vacant);
+	pthread_mutex_unlock(&bathroom->lock);
+	pthread_join(timerThread, NULL);
+
 
 	Finalize();
 

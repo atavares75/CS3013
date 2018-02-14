@@ -63,9 +63,9 @@ void *Individual(void * p){
 	printf("Number of loops: %d", (int)prsn->loopCount);
 
 	int averageTimeSpentInQueue = (int)prsn->totalWaitTime/(int)prsn->loopCount;
-	printf("Minimum time spent in the queue: %d", (int)prsn->minimumWaitTime);
-	printf("Average time spent in the queue: %d", averageTimeSpentInQueue);
-	printf("Maximum time spent in the queue: %d", (int)prsn->maximumWaitTime);
+	printf("Minimum time spent in the queue in seconds: %d", (int)prsn->minimumWaitTime);
+	printf("Average time spent in the queue in seconds: %d", averageTimeSpentInQueue);
+	printf("Maximum time spent in the queue in seconds: %d", (int)prsn->maximumWaitTime);
 
 }
 

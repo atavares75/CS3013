@@ -22,6 +22,12 @@ typedef struct Bathroom_Object {
 	pthread_mutex_t lock;
 	int queueLength;
 	pthread_cond_t empty;
+
+	int numUsages;
+	long timeVacant;
+	long timeOccupied;
+	pthread_cond_t vacant;
+	int flag;
 } Bathroom;
 
 /*
@@ -45,5 +51,12 @@ void Initialize();
  *	Finalizes the execution of the bathroom.
  */
 void Finalize();
+
+
+/*
+ *	Keeps track of time bathroom is vacant and time it is occupied
+ */
+void *Time_Keeper();
+
 
 #endif /* BATHROOM_H_ */

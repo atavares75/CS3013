@@ -33,7 +33,7 @@ void *Individual(void * p){
 		t = clock() - t;
 		double timeWaiting = ((double) t)/CLOCKS_PER_SEC;
 
-		//TODO: figure out where to store waitTime
+		
 		if(prsn->maximumWaitTime < timeWaiting){
 			prsn->maximumWaitTime = (int)timeWaiting;
 		}

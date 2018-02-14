@@ -23,7 +23,7 @@ struct Person_Object {
 	unsigned int loopCount;
 	unsigned long meanArrivalTime;
 	unsigned long meanStayTime;
-} person;
+};
 
 typedef struct Person_Object Person;
 

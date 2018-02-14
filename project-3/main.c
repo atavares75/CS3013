@@ -13,7 +13,7 @@
 #define MAX_ARGS 6
 
 /* Global, unchangable pointer to bathroom struct, to be initialized */
-Bathroom * const bathroom;
+Bathroom * bathroom;
 
 int main(int argc, char **argv) {
 	/* Variables */
@@ -26,6 +26,7 @@ int main(int argc, char **argv) {
 	/* Argument checking */
 	if (argc > MAX_ARGS || argc < 5) {
 		printf("Number of arguments is invalid, please try again.\n");
+		printf("  Syntax -- ./bathroomSim nUsers avgLoops avgArrival averageStayTime (opt)seed\n");
 		exit(1);
 	} else {
 		nUsers = atoi(argv[1]);
@@ -53,7 +54,7 @@ int main(int argc, char **argv) {
 
 	int r_code;
 	if((r_code = pthread_create(&timerThread, NULL, Time_Keeper, NULL)) != 0){
-			printf("Error creating thread");
+			printf("Error creating thread\n");
 			exit(r_code);
 		}	
 	
@@ -76,7 +77,7 @@ int main(int argc, char **argv) {
 
 		
 		if((r_code = pthread_create(&people[p], NULL, Individual, &personArray[p]) != 0)){
-			printf("Error creating thread");
+			printf("Error creating thread\n");
 			exit(r_code);
 		}
 

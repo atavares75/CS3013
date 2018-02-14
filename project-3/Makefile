@@ -23,4 +23,4 @@ person.o: person.c
 
 	
 clean:
-	rm -r $(EXE) $(OBJ)
+	rm -r $(EXE) $(OBJ) *.gch

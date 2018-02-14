@@ -6,7 +6,7 @@
 #include "bathroom.h"
 
 
-extern Bathroom * const bathroom;
+extern Bathroom * bathroom;
 
 
 /*
@@ -52,6 +52,8 @@ void Leave() {
  * Initializes the bathroom. Should be only called by master thread.
  */
 void Initialize() {
+	bathroom = (Bathroom*) calloc(1, sizeof(Bathroom));
+
 	bathroom->curGender = MALE;
 	bathroom->population = 0;
 	bathroom->queueLength = 0;
@@ -69,6 +71,8 @@ void Initialize() {
  *	Finalizes the execution of the bathroom.
  */
 void Finalize(){
+	free(bathroom);
+
 	//do this after we figure out how we are going to gather statistics
 	printf("Number of usages: %d\n", bathroom->numUsages);
 	printf("Total time bathroom was vacant in seconds: %ld\n", bathroom->timeVacant);

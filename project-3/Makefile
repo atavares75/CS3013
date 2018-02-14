@@ -13,9 +13,9 @@ main.o: main.c
 	$(CC) $(CFLAGS) main.c
 	echo "main.o has been compiled."
 
-monitor.o: monitor.c
-	$(CC) $(CFLAGS) monitor.c
-	echo "monitor.o has been compiled."
+bathroom.o: bathroom.c
+	$(CC) $(CFLAGS) bathroom.c
+	echo "bathroom.o has been compiled."
 	
 person.o: person.c
 	$(CC) $(CFLAGS) person.c

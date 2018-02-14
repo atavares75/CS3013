@@ -2,7 +2,7 @@
  * person.h
  *
  *  Created on: Feb 7, 2018
- *      Author: L. Gonsalves
+ *      Author: L. Gonsalves, A. Tavares
  */
 
 #ifndef PERSON_H_
@@ -12,7 +12,8 @@
 #include </usr/include/pthread.h>
 #include <math.h>
 
-struct Person {
+
+struct Person_Object {
 	pthread_t *thread;
 	Gender gender;
 	double totalWaitTime;
@@ -24,7 +25,7 @@ struct Person {
 	unsigned long meanStayTime;
 } person;
 
-typedef struct Person Person;
+typedef struct Person_Object Person;
 
 // generates a random stay/wait time
 void genTime(long* time, long mean);
@@ -33,5 +34,13 @@ void genGender(Gender* gender);
 
 // implementation of thread
 void * Individual(void * p);
+
+// generates a random stay/wait time
+void genTime(long* time, long mean);
+void genLoops(int* avgLoops, int mean);
+void genGender(Gender* gender);
+
+// implementation of thread
+void *Individual(void* p);
 
 #endif /* PERSON_H_ */

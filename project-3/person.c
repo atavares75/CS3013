@@ -2,7 +2,7 @@
  * person.c
  *
  *  Created on: Feb 7, 2018
- *      Author: L. Gonsalves
+ *      Author: L. Gonsalves, A. Tavares
  *
  *
  *     	Contains source file for generating random amounts of time,
@@ -73,7 +73,7 @@ void* Individual(void * p){
 /* Helpers */
 void genTime(long* time, long mean){
 	//TODO: define random time generation, check project instructions for details on how to do this
-	float stdev = 2.78;
+	float stdev = mean/2;
 
 	float a = drand48();
 	float b = drand48();
@@ -87,7 +87,7 @@ void genTime(long* time, long mean){
 
 void genLoops(int* loops, int mean){
 	//TODO: define random number of loops generation
-	float stdev = 2.78;
+	float stdev = mean/2;
 
 	float a = drand48();
 	float b = drand48();
@@ -99,13 +99,14 @@ void genLoops(int* loops, int mean){
 	*loops = z;
 }
 
+
 void genGender(Gender *gender){
 	int num = rand();
 
 	if(num%2 == 0){
 		*gender = MALE;
-	} else{
-		*gender = FEMALE;
 	}
+	else
+		*gender = FEMALE;
 
 }

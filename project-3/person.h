@@ -17,12 +17,12 @@ struct Person_Object {
 	pthread_t thread;
 	Gender gender;
 	double totalWaitTime;
-	unsigned long totalStayTime;
-	unsigned int minimumWaitTime;
-	unsigned int maximumWaitTime;
-	unsigned int loopCount;
-	unsigned long meanArrivalTime;
-	unsigned long meanStayTime;
+	double totalStayTime;
+	double minimumWaitTime;
+	double maximumWaitTime;
+	int loopCount;
+	double meanArrivalTime;
+	double meanStayTime;
 };
 
 typedef struct Person_Object Person;

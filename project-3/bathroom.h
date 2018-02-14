@@ -24,8 +24,8 @@ typedef struct Bathroom_Object {
 	pthread_cond_t empty;
 
 	int numUsages;
-	long timeVacant;
-	long timeOccupied;
+	double timeVacant;
+	double timeOccupied;
 	pthread_cond_t vacant;
 	int flag;
 } Bathroom;

@@ -22,7 +22,7 @@ void* Individual(void * p){
 
 	for(int i = 0; i < prsn->loopCount; i++){
 
-		long arrivalTime;
+		double arrivalTime;
 		genTime(&arrivalTime, prsn->meanArrivalTime);
 
 		sleep(arrivalTime);
@@ -35,14 +35,14 @@ void* Individual(void * p){
 
 		
 		if(prsn->maximumWaitTime < timeWaiting){
-			prsn->maximumWaitTime = (int)timeWaiting;
+			prsn->maximumWaitTime = timeWaiting;
 		}
 		if(prsn->minimumWaitTime > timeWaiting){
-			prsn->minimumWaitTime = (int)timeWaiting;
+			prsn->minimumWaitTime = timeWaiting;
 		}
 		prsn->totalWaitTime += timeWaiting;
 
-		long stayTime;
+		double stayTime;
 		genTime(&stayTime, prsn->meanStayTime);
 		prsn->totalStayTime += stayTime;
 
@@ -59,26 +59,26 @@ void* Individual(void * p){
 		printf("Gender: Female\n");
 	}
 
-	printf("Number of loops: %d\n", (int)prsn->loopCount);
+	printf("Number of loops: %d\n", prsn->loopCount);
 
-	int averageTimeSpentInQueue = (int)prsn->totalWaitTime/(int)prsn->loopCount;
-	printf("Minimum time spent in the queue in seconds: %d\n", (int)prsn->minimumWaitTime);
-	printf("Average time spent in the queue in seconds: %d\n", averageTimeSpentInQueue);
-	printf("Maximum time spent in the queue in seconds: %d\n\n", (int)prsn->maximumWaitTime);
+	double averageTimeSpentInQueue = prsn->totalWaitTime/prsn->loopCount;
+	printf("Minimum time spent in the queue in seconds: %f\n", prsn->minimumWaitTime);
+	printf("Average time spent in the queue in seconds: %f\n", averageTimeSpentInQueue);
+	printf("Maximum time spent in the queue in seconds: %f\n\n", prsn->maximumWaitTime);
 
 	return NULL;
 }
 
 
 /* Helpers */
-void genTime(long* time, long mean){
+void genTime(double* time, double mean){
 	//TODO: define random time generation, check project instructions for details on how to do this
 	float stdev = mean/2;
 
 	float a = drand48();
 	float b = drand48();
 	
-	int z = sqrt(-2 * log(a)) * cos(2 * M_PI * b);
+	double z = sqrt(-2 * log(a)) * cos(2 * M_PI * b);
 
 	z = (stdev * z) + mean;
 

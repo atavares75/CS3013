@@ -27,13 +27,6 @@ struct Person_Object {
 
 typedef struct Person_Object Person;
 
-// generates a random stay/wait time
-void genTime(long* time, long mean);
-void genLoops(int* targetLoops, int mean);
-void genGender(Gender* gender);
-
-// implementation of thread
-void * Individual(void * p);
 
 // generates a random stay/wait time
 void genTime(long* time, long mean);

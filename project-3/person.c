@@ -13,6 +13,7 @@
 #include "person.h"
 #include <unistd.h>
 #include <time.h>
+#include <math.h>
 
 
 
@@ -72,18 +73,25 @@ void *Individual(void * p){
 
 /* Helpers */
 void genTime(long* time, long mean){
-	//TODO: define random time generation, check project instructions for details on how to do this
-	long t = 0;
 	long stdev = mean/2;
-	while(t <= 0){
+	double a, b;
 
-	}
-	
+	a = drand48();
+	b = drand48();
+
+	z = sqrt(-2 * log(a)) * cos(2 * pi * b);
+	time = (long)(z * stdev + mean);	
 }
 
-void genLoops(int* avgLoops){
-	//TODO: define random number of loops generation
+void genLoops(int* numLoops, int mean){
+	int stdev = mean/2;
+	double a, b;
 
+	a = drand48();
+	b = drand48();
+
+	z = sqrt(-2 * log(a)) * cos(2 * pi * b);
+	numLoops = (int)(z * stdev + mean);
 }
 
 void genGender(Gender *gender){

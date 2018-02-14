@@ -60,10 +60,7 @@ int main(int argc, char **argv) {
 		genGender(&g);
 
 		int loops;
-		genLoops(&loops);
-
-		long waitTime;
-		genTime(&waitTime);
+		genLoops(&loops, avgLoops);
 
 		personArray[p].gender = g;
 		personArray[p].maximumWaitTime = 0;

@@ -40,10 +40,11 @@ int main(int argc, char **argv) {
 		}
 	}
 
-	struct Person personArray[nUsers];
+	Person personArray[nUsers];
 
 	// TODO: Define bathroom initialization here (master thread)
 	Initialize();
+
 	// TODO: Write code for thread initialization
 	/* Initialize a thread for each person */
 	for (int p = 0; p < nUsers; p++){
@@ -53,17 +54,30 @@ int main(int argc, char **argv) {
 		int loops;
 		genLoops(&loops);
 
+		long waitTime;
+		genTime(&waitTime);
+
 		personArray[p].gender = g;
 		personArray[p].maximumWaitTime = 0;
 		personArray[p].minimumWaitTime = ~0;
 		personArray[p].totalStayTime = 0;
 		personArray[p].totalWaitTime = 0;
-		personArray[p].totalStayTime = 0;
 		personArray[p].loopCount = loops;
+		personArray[p].meanArrivalTime = meanArrival;
+		personArray[p].meanStayTime = meanStay;
+
+		int r_code;
+		pthread_t person;
+		if((r_code = pthread_create(&person, NULL, Individual, &personArray[p])) != 0){
+			printf("Error creating thread");
+			exit(r_code);
+		}
 
 	}
 
 	// TODO: Wait for threads to finish
+
+	Finalize();
 
 	exit(0);
 }

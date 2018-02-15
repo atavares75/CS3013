@@ -25,7 +25,9 @@ void* Individual(void * p){
 		double arrivalTime;
 		genTime(&arrivalTime, prsn->meanArrivalTime);
 
-		sleep(arrivalTime);
+		if(usleep((unsigned int)arrivalTime) != 0){
+			printf("Error with usleep for arrival time\n");
+		}
 
 		clock_t t;
 		t = clock();
@@ -37,7 +39,7 @@ void* Individual(void * p){
 		if(prsn->maximumWaitTime < timeWaiting){
 			prsn->maximumWaitTime = timeWaiting;
 		}
-		if(prsn->minimumWaitTime > timeWaiting){
+		if(prsn->minimumWaitTime > timeWaiting && timeWaiting > 0){
 			prsn->minimumWaitTime = timeWaiting;
 		}
 		prsn->totalWaitTime += timeWaiting;
@@ -46,7 +48,10 @@ void* Individual(void * p){
 		genTime(&stayTime, prsn->meanStayTime);
 		prsn->totalStayTime += stayTime;
 
-		sleep(stayTime);
+		if(usleep((unsigned int)stayTime) != 0){
+			printf("Error with usleep for stay time\n");
+		}
+		
 
 		Leave();
 	}

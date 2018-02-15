@@ -9,7 +9,7 @@
 #define PERSON_H_
 
 #include "bathroom.h"
-#include </usr/include/pthread.h>
+#include <pthread.h>
 #include <math.h>
 
 

@@ -29,6 +29,7 @@ int main(int argc, char **argv) {
 		printf("Number of arguments is invalid, please try again.\n");
 		printf(
 				"  Syntax -- ./bathroomSim nUsers avgLoops avgArrival averageStayTime (opt)seed\n");
+		printf("Number of argumnets: %d\n", argc);
 		exit(1);
 	} else {
 		nUsers = atoi(argv[1]);

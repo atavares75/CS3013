@@ -85,7 +85,7 @@ void * Individual(void * p){
 
 /* Helpers */
 void genTime(double* time, double mean){
-	//TODO: define random time generation, check project instructions for details on how to do this
+
 	float stdev = mean/2;
 
 	float a = drand48();
@@ -99,16 +99,17 @@ void genTime(double* time, double mean){
 }
 
 void genLoops(int* loops, int mean){
-	//TODO: define random number of loops generation
+	float z;
+	do{
 	float stdev = mean/2;
 
 	float a = drand48();
 	float b = drand48();
 
-	float z = sqrt(-2 * log(a)) * cos(2 * M_PI * b);
+	z = sqrt(-2 * log(a)) * cos(2 * M_PI * b);
 
 	z = (stdev * z) + mean;
-
+	} while(abs((int)z)<=0);
 	*loops = abs((int)z);
 }
 

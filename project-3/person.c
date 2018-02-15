@@ -15,6 +15,7 @@
 #include <time.h>
 #include <math.h>
 
+extern Bathroom * bathroom;
 
 /* Individual Thread Routine */
 void * Individual(void * p){
@@ -44,9 +45,12 @@ void * Individual(void * p){
 		}
 		prsn->totalWaitTime += timeWaiting;
 
+
+
 		double stayTime;
 		genTime(&stayTime, prsn->meanStayTime);
 		prsn->totalStayTime += stayTime;
+
 
 		if(usleep((unsigned int)stayTime) != 0){
 			printf("Error with usleep for stay time\n");
@@ -55,6 +59,9 @@ void * Individual(void * p){
 
 		Leave();
 	}
+
+	bathroom->totalQueueTimeOfPeople += prsn->totalWaitTime;
+	bathroom->totalOccupiedTimeOfPeople += prsn->totalStayTime;
 
 	pthread_t tid = prsn->thread;
 	printf("Thread ID: %lu\n", (unsigned long int)tid);
@@ -68,9 +75,9 @@ void * Individual(void * p){
 	printf("Number of loops: %d\n", prsn->loopCount);
 
 	double averageTimeSpentInQueue = prsn->totalWaitTime/prsn->loopCount;
-	printf("Minimum time spent in the queue in seconds: %f\n", prsn->minimumWaitTime);
-	printf("Average time spent in the queue in seconds: %f\n", averageTimeSpentInQueue);
-	printf("Maximum time spent in the queue in seconds: %f\n\n", prsn->maximumWaitTime);
+	printf("Minimum time spent in the queue in seconds: %f\n", 1000000*prsn->minimumWaitTime);
+	printf("Average time spent in the queue in seconds: %f\n", 1000000*averageTimeSpentInQueue);
+	printf("Maximum time spent in the queue in seconds: %f\n\n", 1000000*prsn->maximumWaitTime);
 
 	return NULL;
 }

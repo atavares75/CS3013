@@ -27,7 +27,8 @@ int main(int argc, char **argv) {
 	/* Argument checking */
 	if (argc > MAX_ARGS || argc < 5) {
 		printf("Number of arguments is invalid, please try again.\n");
-		printf("  Syntax -- ./bathroomSim nUsers avgLoops avgArrival averageStayTime (opt)seed\n");
+		printf(
+				"  Syntax -- ./bathroomSim nUsers avgLoops avgArrival averageStayTime (opt)seed\n");
 		exit(1);
 	} else {
 		nUsers = atoi(argv[1]);
@@ -38,26 +39,29 @@ int main(int argc, char **argv) {
 		if (argc == MAX_ARGS) {
 			seed = atoi(argv[5]);
 			srand48(seed);
-		}
-		else
+		} else
 			srand48(time(NULL));
 	}
 
 	Person personArray[nUsers];
 
-	
 	Initialize();
 
 	pthread_t timerThread;
+	pthread_t queueThread;
 
 	int r_code;
-	if((r_code = pthread_create(&timerThread, NULL, Time_Keeper, NULL)) != 0){
-			printf("Error creating thread\n");
-			exit(r_code);
-		}	
+	if ((r_code = pthread_create(&timerThread, NULL, Time_Keeper, NULL)) != 0) {
+		printf("Error creating thread\n");
+		exit(r_code);
+	}
+	if ((r_code = pthread_create(&queueThread, NULL, Queue_Time_Keeper, NULL)) != 0) {
+		printf("Error creating thread\n");
+		exit(r_code);
+	}
 
 	/* Initialize a thread for each person */
-	for (int p = 0; p < nUsers; p++){
+	for (int p = 0; p < nUsers; p++) {
 		Gender g;
 		genGender(&g);
 
@@ -73,32 +77,30 @@ int main(int argc, char **argv) {
 		personArray[p].meanArrivalTime = meanArrival;
 		personArray[p].meanStayTime = meanStay;
 
-		int error_code;
-		if((error_code = pthread_create(&personArray[p].thread, NULL, Individual, &personArray[p]) != 0)){
+		if ((r_code = pthread_create(&personArray[p].thread, NULL,
+				Individual, &personArray[p]) != 0)) {
 			printf("Error creating thread\n");
-			exit(error_code);
+			exit(r_code);
 		}
 
 	}
 
-
-	for(int j = 0; j < nUsers; j++){
+	for (int j = 0; j < nUsers; j++) {
 		pthread_join(personArray[j].thread, NULL);
 	}
-
 
 	//ends timer thread
 	pthread_mutex_lock(&bathroom->lock);
 	bathroom->flag = 0;
 	//makes sure time keeper isn't stuck waiting for condition
 	pthread_cond_signal(&bathroom->vacant);
+	pthread_cond_signal(&bathroom->queueOccupied);
 	pthread_mutex_unlock(&bathroom->lock);
 	pthread_join(timerThread, NULL);
-
+	pthread_join(queueThread, NULL);
 
 	Finalize();
 
 	exit(0);
 }
-
 

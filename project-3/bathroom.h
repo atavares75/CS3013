@@ -27,7 +27,12 @@ typedef struct Bathroom_Object {
 	double timeVacant;
 	double timeOccupied;
 	pthread_cond_t vacant;
+	pthread_cond_t queueOccupied;
 	int flag;
+	double totalQueueTime;
+	double totalQueueTimeOfPeople;
+	double totalOccupiedTimeOfPeople;
+
 } Bathroom;
 
 /*
@@ -55,7 +60,12 @@ void Finalize();
 /*
  *	Keeps track of time bathroom is vacant and time it is occupied
  */
-void* Time_Keeper();
+void * Time_Keeper();
+
+/*
+ * keeps track of amount of time that the queue is non-empty
+ */
+void * Queue_Time_Keeper();
 
 
 #endif /* BATHROOM_H_ */

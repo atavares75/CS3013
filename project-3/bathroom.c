@@ -16,7 +16,7 @@ extern Bathroom * bathroom;
 void Enter(Gender g) {
 	pthread_mutex_lock(&bathroom->lock);
 	//checks if bathroom is occupied by persons of the opposite gender
-	while (bathroom->population != 0 && bathroom->curGender != g) {
+	while (bathroom->population > 0 && bathroom->curGender != g) {
 		printf("[%lu] Thread of gender %d waiting.\n", (unsigned long int)pthread_self(), (int) g);
 		bathroom->queueLength++;
 		pthread_cond_wait(&bathroom->empty, &bathroom->lock);
@@ -28,7 +28,7 @@ void Enter(Gender g) {
 		printf("   I was the first to enter. Bathroom gender is now %d.\n", (int) g);
 		bathroom->curGender = g;
 		pthread_cond_broadcast(&bathroom->vacant);
-		printf("-- cond signaled --.\n");
+		//printf("-- cond signaled --.\n");
 	}
 	pthread_mutex_unlock(&bathroom->lock);
 }
@@ -46,8 +46,8 @@ void Leave() {
 	printf("[%lu] Leaving bathroom... ",  (unsigned long int)pthread_self());
 	if (bathroom->population == 0) {
 		printf("   Bathroom empty! Signaling...");
+		pthread_cond_broadcast(&bathroom->empty);
 		pthread_cond_broadcast(&bathroom->vacant);
-		pthread_cond_broadcast(&bathroom->empty);		
 	}
 	printf("\n");
 	pthread_mutex_unlock(&bathroom->lock);
@@ -89,9 +89,9 @@ void Finalize(){
 
 /*
  *	Keeps track of time bathroom is vacant and time it is occupied
- */
-void *Time_Keeper(){
-	//pthread_mutex_lock(&bathroom->lock);
+*/
+void * Time_Keeper(){
+	pthread_mutex_lock(&bathroom->lock);
 	while(bathroom->flag){
 		
 		if(bathroom->population == 0){
@@ -111,7 +111,8 @@ void *Time_Keeper(){
 		}
 		
 	}
-	//pthread_mutex_unlock(&bathroom->lock);
+	pthread_mutex_unlock(&bathroom->lock);
 
 	return NULL;
 }
+

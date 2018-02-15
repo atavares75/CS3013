@@ -17,7 +17,7 @@
 
 
 /* Individual Thread Routine */
-void* Individual(void * p){
+void * Individual(void * p){
 	Person *prsn = (Person *)p;
 
 	for(int i = 0; i < prsn->loopCount; i++){
@@ -55,6 +55,7 @@ void* Individual(void * p){
 
 		Leave();
 	}
+
 	pthread_t tid = prsn->thread;
 	printf("Thread ID: %lu\n", (unsigned long int)tid);
 
@@ -83,11 +84,11 @@ void genTime(double* time, double mean){
 	float a = drand48();
 	float b = drand48();
 	
-	double z = sqrt(-2 * log(a)) * cos(2 * M_PI * b);
+	float z = sqrt(-2 * log(a)) * cos(2 * M_PI * b);
 
 	z = (stdev * z) + mean;
 
-	*time = z;
+	*time = abs((double)z);
 }
 
 void genLoops(int* loops, int mean){
@@ -97,11 +98,11 @@ void genLoops(int* loops, int mean){
 	float a = drand48();
 	float b = drand48();
 
-	int z = sqrt(-2 * log(a)) * cos(2 * M_PI * b);
+	float z = sqrt(-2 * log(a)) * cos(2 * M_PI * b);
 
 	z = (stdev * z) + mean;
 
-	*loops = z;
+	*loops = abs((int)z);
 }
 
 

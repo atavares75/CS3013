@@ -55,7 +55,7 @@ int main(int argc, char **argv) {
 			printf("Error creating thread\n");
 			exit(r_code);
 		}	
-	
+
 	/* Initialize a thread for each person */
 	for (int p = 0; p < nUsers; p++){
 		Gender g;
@@ -76,10 +76,11 @@ int main(int argc, char **argv) {
 		int error_code;
 		if((error_code = pthread_create(&personArray[p].thread, NULL, Individual, &personArray[p]) != 0)){
 			printf("Error creating thread\n");
-			exit(r_code);
+			exit(error_code);
 		}
 
 	}
+
 
 	for(int j = 0; j < nUsers; j++){
 		pthread_join(personArray[j].thread, NULL);

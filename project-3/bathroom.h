@@ -20,6 +20,7 @@ typedef struct Bathroom_Object {
 	Gender curGender;
 	int population;
 	pthread_mutex_t lock;
+	pthread_mutex_t print_lock;
 	int queueLength;
 	pthread_cond_t empty;
 

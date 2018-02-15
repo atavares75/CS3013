@@ -1,0 +1,1828 @@
+alextavares@CS-3013-VM:~/Desktop/CS3013/project-3$ ./bathroomSim 100 5 2000 500
+[140617400588032] Thread of gender 1 entered bathroom.
+   I was the first to enter. Bathroom gender is now 1.
+[140617501300480] Thread of gender 0 waiting.
+[140617509693184] Thread of gender 1 entered bathroom.
+[140617283090176] Thread of gender 1 entered bathroom.
+[140617459336960] Thread of gender 0 waiting.
+[140617350231808] Thread of gender 0 waiting.
+[140617333446400] Thread of gender 0 waiting.
+[140617291482880] Thread of gender 0 waiting.
+[140617400588032] Leaving bathroom... 
+[140617509693184] Leaving bathroom... 
+[140617249519360] Thread of gender 0 waiting.
+[140617165592320] Thread of gender 1 entered bathroom.
+[140617132021504] Thread of gender 1 entered bathroom.
+[140617123628800] Thread of gender 0 waiting.
+[140617014523648] Thread of gender 1 entered bathroom.
+[140616897025792] Thread of gender 1 entered bathroom.
+[140616871847680] Thread of gender 0 waiting.
+[140616779527936] Thread of gender 1 entered bathroom.
+[140616745957120] Thread of gender 0 waiting.
+[140616695600896] Thread of gender 0 waiting.
+[140616687208192] Thread of gender 0 waiting.
+[140617467729664] Thread of gender 1 entered bathroom.
+[140617408980736] Thread of gender 0 waiting.
+[140617417373440] Thread of gender 1 entered bathroom.
+[140617450944256] Thread of gender 0 waiting.
+[140617492907776] Thread of gender 1 entered bathroom.
+[140617132021504] Leaving bathroom... 
+[140616804706048] Thread of gender 0 waiting.
+[140617274697472] Thread of gender 1 entered bathroom.
+[140617484515072] Thread of gender 1 entered bathroom.
+[140617241126656] Thread of gender 0 waiting.
+[140617224341248] Thread of gender 1 entered bathroom.
+[140617098450688] Thread of gender 0 waiting.
+[140617257912064] Thread of gender 1 entered bathroom.
+[140617039701760] Thread of gender 0 waiting.
+[140617492907776] Leaving bathroom... 
+[140617417373440] Leaving bathroom... 
+[140617207555840] Thread of gender 1 entered bathroom.
+[140617165592320] Leaving bathroom... 
+[140617115236096] Thread of gender 0 waiting.
+[140617073272576] Thread of gender 1 entered bathroom.
+[140617048094464] Thread of gender 1 entered bathroom.
+[140617006130944] Thread of gender 1 entered bathroom.
+[140617014523648] Leaving bathroom... 
+[140617232733952] Thread of gender 0 waiting.
+[140617224341248] Leaving bathroom... 
+[140617173985024] Thread of gender 1 entered bathroom.
+[140617157199616] Thread of gender 1 entered bathroom.
+[140617090057984] Thread of gender 1 entered bathroom.
+[140617081665280] Thread of gender 0 waiting.
+[140617064879872] Thread of gender 0 waiting.
+[140617073272576] Leaving bathroom... 
+[140617031309056] Thread of gender 0 waiting.
+[140617022916352] Thread of gender 0 waiting.
+[140617509693184] Thread of gender 1 entered bathroom.
+[140617484515072] Leaving bathroom... 
+[140617207555840] Leaving bathroom... 
+[140617190770432] Thread of gender 1 entered bathroom.
+[140617182377728] Thread of gender 0 waiting.
+[140617173985024] Leaving bathroom... 
+[140617148806912] Thread of gender 1 entered bathroom.
+[140617140414208] Thread of gender 0 waiting.
+[140617257912064] Leaving bathroom... 
+[140617090057984] Leaving bathroom... 
+[140617425766144] Thread of gender 0 waiting.
+[140617392195328] Thread of gender 1 entered bathroom.
+[140617383802624] Thread of gender 0 waiting.
+[140617375409920] Thread of gender 0 waiting.
+[140617190770432] Leaving bathroom... 
+[140617048094464] Leaving bathroom... 
+[140617392195328] Leaving bathroom... 
+[140617157199616] Leaving bathroom... 
+[140617148806912] Leaving bathroom... 
+[140617056487168] Thread of gender 0 waiting.
+[140617308268288] Thread of gender 0 waiting.
+[140617316660992] Thread of gender 1 entered bathroom.
+[140617400588032] Thread of gender 1 entered bathroom.
+[140617325053696] Thread of gender 1 entered bathroom.
+[140617442551552] Thread of gender 1 entered bathroom.
+[140617492907776] Thread of gender 1 entered bathroom.
+[140617341839104] Thread of gender 1 entered bathroom.
+[140617476122368] Thread of gender 1 entered bathroom.
+[140617417373440] Thread of gender 1 entered bathroom.
+[140617400588032] Leaving bathroom... 
+[140617173985024] Thread of gender 1 entered bathroom.
+[140617358624512] Thread of gender 0 waiting.
+[140617224341248] Thread of gender 1 entered bathroom.
+[140617199163136] Thread of gender 0 waiting.
+[140617165592320] Thread of gender 1 entered bathroom.
+[140617132021504] Thread of gender 1 entered bathroom.
+[140617106843392] Thread of gender 1 entered bathroom.
+[140617257912064] Thread of gender 1 entered bathroom.
+[140617073272576] Thread of gender 1 entered bathroom.
+[140617509693184] Leaving bathroom... 
+[140617316660992] Leaving bathroom... 
+[140617392195328] Thread of gender 1 entered bathroom.
+[140617476122368] Leaving bathroom... 
+Thread ID: 140617048094464
+Gender: Female
+Number of loops: 1
+Minimum time spent in the queue in seconds: 62.000000
+Average time spent in the queue in seconds: 62.000000
+Maximum time spent in the queue in seconds: 62.000000
+
+[140617014523648] Thread of gender 1 entered bathroom.
+[140617442551552] Leaving bathroom... 
+[140617341839104] Leaving bathroom... 
+[140617417373440] Leaving bathroom... 
+[140617492907776] Leaving bathroom... 
+[140617325053696] Leaving bathroom... 
+[140617509693184] Thread of gender 1 entered bathroom.
+[140617224341248] Leaving bathroom... 
+[140617207555840] Thread of gender 1 entered bathroom.
+[140617173985024] Leaving bathroom... 
+[140617165592320] Leaving bathroom... 
+[140617148806912] Thread of gender 1 entered bathroom.
+[140617132021504] Leaving bathroom... 
+[140617106843392] Leaving bathroom... 
+[140617090057984] Thread of gender 1 entered bathroom.
+[140617257912064] Leaving bathroom... 
+[140617073272576] Leaving bathroom... 
+[140617006130944] Leaving bathroom... 
+[140616997738240] Thread of gender 1 entered bathroom.
+[140617392195328] Leaving bathroom... 
+[140617509693184] Leaving bathroom... 
+[140617014523648] Leaving bathroom... 
+Thread ID: 140617014523648
+Gender: Female
+Number of loops: 2
+Minimum time spent in the queue in seconds: 5.000000
+Average time spent in the queue in seconds: 49.500000
+Maximum time spent in the queue in seconds: 94.000000
+
+[140616989345536] Thread of gender 0 waiting.
+[140616980952832] Thread of gender 1 entered bathroom.
+[140617484515072] Thread of gender 1 entered bathroom.
+[140617207555840] Leaving bathroom... 
+[140617190770432] Thread of gender 1 entered bathroom.
+[140617157199616] Thread of gender 1 entered bathroom.
+[140617165592320] Thread of gender 1 entered bathroom.
+[140617148806912] Leaving bathroom... 
+[140617090057984] Leaving bathroom... 
+[140617073272576] Thread of gender 1 entered bathroom.
+[140616997738240] Leaving bathroom... 
+[140616972560128] Thread of gender 0 waiting.
+[140617316660992] Thread of gender 1 entered bathroom.
+[140617476122368] Thread of gender 1 entered bathroom.
+[140617400588032] Thread of gender 1 entered bathroom.
+[140617509693184] Thread of gender 1 entered bathroom.
+[140617325053696] Thread of gender 1 entered bathroom.
+[140617190770432] Leaving bathroom... 
+[140617157199616] Leaving bathroom... 
+[140617165592320] Leaving bathroom... 
+[140617073272576] Leaving bathroom... 
+Thread ID: 140617073272576
+Gender: Female
+Number of loops: 3
+Minimum time spent in the queue in seconds: 7.000000
+Average time spent in the queue in seconds: 173.666667
+Maximum time spent in the queue in seconds: 457.000000
+
+[140617442551552] Thread of gender 1 entered bathroom.
+[140617341839104] Thread of gender 1 entered bathroom.
+[140617484515072] Leaving bathroom... 
+[140617316660992] Leaving bathroom... 
+[140617492907776] Thread of gender 1 entered bathroom.
+[140617400588032] Leaving bathroom... 
+[140617509693184] Leaving bathroom... 
+[140617224341248] Thread of gender 1 entered bathroom.
+[140617417373440] Thread of gender 1 entered bathroom.
+[140617476122368] Leaving bathroom... 
+[140617325053696] Leaving bathroom... 
+[140617207555840] Thread of gender 1 entered bathroom.
+[140617173985024] Thread of gender 1 entered bathroom.
+[140617148806912] Thread of gender 1 entered bathroom.
+[140617132021504] Thread of gender 1 entered bathroom.
+[140617106843392] Thread of gender 1 entered bathroom.
+[140617257912064] Thread of gender 1 entered bathroom.
+[140617341839104] Leaving bathroom... 
+[140617442551552] Leaving bathroom... 
+[140617417373440] Leaving bathroom... 
+[140617224341248] Leaving bathroom... 
+[140617173985024] Leaving bathroom... 
+[140616964167424] Thread of gender 1 entered bathroom.
+[140617006130944] Thread of gender 1 entered bathroom.
+[140616980952832] Leaving bathroom... 
+[140616955774720] Thread of gender 0 waiting.
+[140616947382016] Thread of gender 1 entered bathroom.
+[140616938989312] Thread of gender 1 entered bathroom.
+[140616930596608] Thread of gender 1 entered bathroom.
+[140616922203904] Thread of gender 0 waiting.
+[140616913811200] Thread of gender 1 entered bathroom.
+[140617266304768] Thread of gender 1 entered bathroom.
+[140616905418496] Thread of gender 0 waiting.
+[140616897025792] Leaving bathroom... 
+[140616888633088] Thread of gender 0 waiting.
+[140616880240384] Thread of gender 1 entered bathroom.
+[140616863454976] Thread of gender 0 waiting.
+[140616855062272] Thread of gender 1 entered bathroom.
+[140616846669568] Thread of gender 0 waiting.
+[140616829884160] Thread of gender 0 waiting.
+[140616796313344] Thread of gender 0 waiting.
+[140616779527936] Leaving bathroom... 
+[140616771135232] Thread of gender 0 waiting.
+[140616754349824] Thread of gender 0 waiting.
+[140616737564416] Thread of gender 0 waiting.
+[140616720779008] Thread of gender 1 entered bathroom.
+[140616712386304] Thread of gender 0 waiting.
+[140617299875584] Thread of gender 0 waiting.
+[140617367017216] Thread of gender 0 waiting.
+[140617434158848] Thread of gender 1 entered bathroom.
+[140617274697472] Leaving bathroom... 
+[140617467729664] Leaving bathroom... 
+[140616762742528] Thread of gender 1 entered bathroom.
+[140617215948544] Thread of gender 1 entered bathroom.
+[140616678815488] Thread of gender 1 entered bathroom.
+[140617266304768] Leaving bathroom... 
+[140616779527936] Thread of gender 1 entered bathroom.
+[140616880240384] Leaving bathroom... 
+[140616855062272] Leaving bathroom... 
+[140617106843392] Leaving bathroom... 
+[140617257912064] Leaving bathroom... 
+[140617283090176] Leaving bathroom... 
+Thread ID: 140617283090176
+Gender: Female
+Number of loops: 1
+Minimum time spent in the queue in seconds: 6.000000
+Average time spent in the queue in seconds: 6.000000
+Maximum time spent in the queue in seconds: 6.000000
+
+[140616964167424] Leaving bathroom... 
+[140617400588032] Thread of gender 1 entered bathroom.
+[140616838276864] Thread of gender 1 entered bathroom.
+[140616821491456] Thread of gender 0 waiting.
+[140616787920640] Thread of gender 1 entered bathroom.
+[140616729171712] Thread of gender 0 waiting.
+[140616703993600] Thread of gender 0 waiting.
+[140617316660992] Thread of gender 1 entered bathroom.
+[140617006130944] Leaving bathroom... 
+[140616938989312] Leaving bathroom... 
+[140616930596608] Leaving bathroom... 
+[140616855062272] Thread of gender 1 entered bathroom.
+[140617434158848] Leaving bathroom... 
+[140617215948544] Leaving bathroom... 
+[140617090057984] Thread of gender 1 entered bathroom.
+[140616779527936] Leaving bathroom... 
+[140617492907776] Leaving bathroom... 
+[140617325053696] Thread of gender 1 entered bathroom.
+[140617207555840] Leaving bathroom... 
+[140617190770432] Thread of gender 1 entered bathroom.
+[140617173985024] Thread of gender 1 entered bathroom.
+[140617132021504] Leaving bathroom... 
+[140617148806912] Leaving bathroom... 
+[140616720779008] Leaving bathroom... 
+Thread ID: 140616720779008
+Gender: Female
+Number of loops: 1
+Minimum time spent in the queue in seconds: 362.000000
+Average time spent in the queue in seconds: 362.000000
+Maximum time spent in the queue in seconds: 362.000000
+
+[140617325053696] Leaving bathroom... 
+[140617392195328] Thread of gender 1 entered bathroom.
+[140617417373440] Thread of gender 1 entered bathroom.
+[140617157199616] Thread of gender 1 entered bathroom.
+[140617165592320] Thread of gender 1 entered bathroom.
+[140617484515072] Thread of gender 1 entered bathroom.
+[140617509693184] Thread of gender 1 entered bathroom.
+[140617400588032] Leaving bathroom... 
+[140617173985024] Leaving bathroom... 
+[140617090057984] Leaving bathroom... 
+[140616997738240] Thread of gender 1 entered bathroom.
+[140616913811200] Leaving bathroom... 
+[140617266304768] Thread of gender 1 entered bathroom.
+[140616880240384] Thread of gender 1 entered bathroom.
+[140616838276864] Leaving bathroom... 
+[140617316660992] Leaving bathroom... 
+[140617476122368] Thread of gender 1 entered bathroom.
+[140617224341248] Thread of gender 1 entered bathroom.
+[140616855062272] Leaving bathroom... 
+[140616938989312] Thread of gender 1 entered bathroom.
+[140617442551552] Thread of gender 1 entered bathroom.
+[140617190770432] Leaving bathroom... 
+[140616813098752] Thread of gender 0 waiting.
+[140616787920640] Leaving bathroom... 
+[140616762742528] Leaving bathroom... 
+[140617341839104] Thread of gender 1 entered bathroom.
+[140617484515072] Leaving bathroom... 
+Thread ID: 140617484515072
+Gender: Female
+Number of loops: 3
+Minimum time spent in the queue in seconds: 7.000000
+Average time spent in the queue in seconds: 128.666667
+Maximum time spent in the queue in seconds: 298.000000
+
+[140617476122368] Leaving bathroom... 
+[140617392195328] Leaving bathroom... 
+[140617417373440] Leaving bathroom... 
+[140617509693184] Leaving bathroom... 
+[140617224341248] Leaving bathroom... 
+Thread ID: 140617224341248
+Gender: Female
+Number of loops: 4
+Minimum time spent in the queue in seconds: 7.000000
+Average time spent in the queue in seconds: 206.250000
+Maximum time spent in the queue in seconds: 418.000000
+
+[140617207555840] Thread of gender 1 entered bathroom.
+[140617190770432] Thread of gender 1 entered bathroom.
+[140617157199616] Leaving bathroom... 
+Thread ID: 140617157199616
+Gender: Female
+Number of loops: 3
+Minimum time spent in the queue in seconds: 63.000000
+Average time spent in the queue in seconds: 193.000000
+Maximum time spent in the queue in seconds: 420.000000
+
+[140617165592320] Leaving bathroom... 
+Thread ID: 140617165592320
+Gender: Female
+Number of loops: 4
+Minimum time spent in the queue in seconds: 6.000000
+Average time spent in the queue in seconds: 245.750000
+Maximum time spent in the queue in seconds: 428.000000
+
+[140617173985024] Thread of gender 1 entered bathroom.
+[140617148806912] Thread of gender 1 entered bathroom.
+[140617106843392] Thread of gender 1 entered bathroom.
+[140617132021504] Thread of gender 1 entered bathroom.
+[140617090057984] Thread of gender 1 entered bathroom.
+[140617257912064] Thread of gender 1 entered bathroom.
+[140617006130944] Thread of gender 1 entered bathroom.
+[140616997738240] Leaving bathroom... 
+[140616930596608] Thread of gender 1 entered bathroom.
+[140617173985024] Leaving bathroom... 
+Thread ID: 140617173985024
+Gender: Female
+Number of loops: 5
+Minimum time spent in the queue in seconds: 7.000000
+Average time spent in the queue in seconds: 17.800000
+Maximum time spent in the queue in seconds: 57.000000
+
+[140616938989312] Leaving bathroom... 
+[140616913811200] Thread of gender 1 entered bathroom.
+[140617266304768] Leaving bathroom... 
+[140616880240384] Leaving bathroom... 
+[140617492907776] Thread of gender 1 entered bathroom.
+[140617341839104] Leaving bathroom... 
+[140617400588032] Thread of gender 1 entered bathroom.
+[140616855062272] Thread of gender 1 entered bathroom.
+[140617148806912] Leaving bathroom... 
+[140616930596608] Leaving bathroom... 
+[140616838276864] Thread of gender 1 entered bathroom.
+[140616787920640] Thread of gender 1 entered bathroom.
+[140616779527936] Thread of gender 1 entered bathroom.
+[140616762742528] Thread of gender 1 entered bathroom.
+[140616678815488] Leaving bathroom... 
+[140617434158848] Thread of gender 1 entered bathroom.
+[140617467729664] Thread of gender 1 entered bathroom.
+[140617215948544] Thread of gender 1 entered bathroom.
+[140616980952832] Thread of gender 1 entered bathroom.
+[140617492907776] Leaving bathroom... 
+[140617400588032] Leaving bathroom... 
+Thread ID: 140617400588032
+Gender: Female
+Number of loops: 5
+Minimum time spent in the queue in seconds: 9.000000
+Average time spent in the queue in seconds: 203.400000
+Maximum time spent in the queue in seconds: 466.000000
+
+[140617207555840] Leaving bathroom... 
+[140617190770432] Leaving bathroom... 
+Thread ID: 140617190770432
+Gender: Female
+Number of loops: 4
+Minimum time spent in the queue in seconds: 6.000000
+Average time spent in the queue in seconds: 110.500000
+Maximum time spent in the queue in seconds: 339.000000
+
+[140617090057984] Leaving bathroom... 
+[140617257912064] Leaving bathroom... 
+[140616980952832] Leaving bathroom... 
+[140616913811200] Leaving bathroom... 
+Thread ID: 140616913811200
+Gender: Female
+Number of loops: 2
+Minimum time spent in the queue in seconds: 6.000000
+Average time spent in the queue in seconds: 148.500000
+Maximum time spent in the queue in seconds: 291.000000
+
+[140616855062272] Leaving bathroom... 
+[140616838276864] Leaving bathroom... 
+[140616787920640] Leaving bathroom... 
+[140616947382016] Leaving bathroom... 
+[140617106843392] Leaving bathroom... 
+[140617006130944] Leaving bathroom... 
+[140616947382016] Thread of gender 1 entered bathroom.
+[140616779527936] Leaving bathroom... 
+Thread ID: 140616779527936
+Gender: Female
+Number of loops: 3
+Minimum time spent in the queue in seconds: 4.000000
+Average time spent in the queue in seconds: 9.000000
+Maximum time spent in the queue in seconds: 18.000000
+
+[140617442551552] Leaving bathroom... 
+Thread ID: 140617442551552
+Gender: Female
+Number of loops: 3
+Minimum time spent in the queue in seconds: 41.000000
+Average time spent in the queue in seconds: 252.666667
+Maximum time spent in the queue in seconds: 509.000000
+
+[140617392195328] Thread of gender 1 entered bathroom.
+[140617509693184] Thread of gender 1 entered bathroom.
+[140617325053696] Thread of gender 1 entered bathroom.
+[140617316660992] Thread of gender 1 entered bathroom.
+[140617476122368] Thread of gender 1 entered bathroom.
+[140617417373440] Thread of gender 1 entered bathroom.
+[140617257912064] Thread of gender 1 entered bathroom.
+[140616897025792] Thread of gender 1 entered bathroom.
+[140617132021504] Leaving bathroom... 
+Thread ID: 140617132021504
+Gender: Female
+Number of loops: 4
+Minimum time spent in the queue in seconds: 5.000000
+Average time spent in the queue in seconds: 215.750000
+[140617274697472] Thread of gender 1 entered bathroom.
+Maximum time spent in the queue in seconds: 429.000000
+
+[140617417373440] Leaving bathroom... 
+[140616762742528] Leaving bathroom... 
+[140617341839104] Thread of gender 1 entered bathroom.
+[140617266304768] Thread of gender 1 entered bathroom.
+[140616787920640] Thread of gender 1 entered bathroom.
+[140617492907776] Thread of gender 1 entered bathroom.
+[140617207555840] Thread of gender 1 entered bathroom.
+[140617148806912] Thread of gender 1 entered bathroom.
+[140617106843392] Thread of gender 1 entered bathroom.
+[140617090057984] Thread of gender 1 entered bathroom.
+[140617006130944] Thread of gender 1 entered bathroom.
+[140616980952832] Thread of gender 1 entered bathroom.
+[140616938989312] Thread of gender 1 entered bathroom.
+[140616930596608] Thread of gender 1 entered bathroom.
+[140616947382016] Leaving bathroom... 
+[140616880240384] Thread of gender 1 entered bathroom.
+[140616855062272] Thread of gender 1 entered bathroom.
+[140616838276864] Thread of gender 1 entered bathroom.
+[140617341839104] Leaving bathroom... 
+[140617266304768] Leaving bathroom... 
+[140617392195328] Leaving bathroom... 
+[140616787920640] Leaving bathroom... 
+[140617106843392] Leaving bathroom... 
+Thread ID: 140617106843392
+Gender: Female
+Number of loops: 4
+Minimum time spent in the queue in seconds: 4.000000
+Average time spent in the queue in seconds: 327.250000
+Maximum time spent in the queue in seconds: 860.000000
+
+[140617434158848] Leaving bathroom... 
+Thread ID: 140617434158848
+[140617341839104] Thread of gender 1 entered bathroom.
+[140616938989312] Leaving bathroom... 
+Gender: Female
+Number of loops: 2
+Minimum time spent in the queue in seconds: 5.000000
+Average time spent in the queue in seconds: 184.000000
+Maximum time spent in the queue in seconds: 363.000000
+
+[140617341839104] Leaving bathroom... 
+[140617392195328] Thread of gender 1 entered bathroom.
+[140617417373440] Thread of gender 1 entered bathroom.
+[140616938989312] Thread of gender 1 entered bathroom.
+[140616930596608] Leaving bathroom... 
+[140616947382016] Thread of gender 1 entered bathroom.
+[140617266304768] Thread of gender 1 entered bathroom.
+[140616762742528] Thread of gender 1 entered bathroom.
+[140616787920640] Thread of gender 1 entered bathroom.
+[140617467729664] Leaving bathroom... 
+[140617509693184] Leaving bathroom... 
+[140617476122368] Leaving bathroom... 
+[140617215948544] Leaving bathroom... 
+[140617316660992] Leaving bathroom... 
+[140617257912064] Leaving bathroom... 
+[140616938989312] Leaving bathroom... 
+[140616997738240] Thread of gender 1 entered bathroom.
+[140616678815488] Thread of gender 1 entered bathroom.
+[140617492907776] Leaving bathroom... 
+[140617090057984] Leaving bathroom... 
+[140616762742528] Leaving bathroom... 
+[140617325053696] Leaving bathroom... 
+Thread ID: 140617325053696
+Gender: Female
+Number of loops: 4
+Minimum time spent in the queue in seconds: 109.000000
+Average time spent in the queue in seconds: 528.000000
+Maximum time spent in the queue in seconds: 1181.000000
+
+[140617207555840] Leaving bathroom... 
+Thread ID: 140617207555840
+Gender: Female
+Number of loops: 5
+Minimum time spent in the queue in seconds: 8.000000
+Average time spent in the queue in seconds: 246.200000
+Maximum time spent in the queue in seconds: 852.000000
+
+[140617148806912] Leaving bathroom... 
+[140617006130944] Leaving bathroom... 
+Thread ID: 140617006130944
+Gender: Female
+Number of loops: 4
+Minimum time spent in the queue in seconds: 10.000000
+Average time spent in the queue in seconds: 389.500000
+Maximum time spent in the queue in seconds: 865.000000
+
+[140616678815488] Leaving bathroom... 
+[140616880240384] Leaving bathroom... 
+[140616855062272] Leaving bathroom... 
+[140616838276864] Leaving bathroom... 
+[140617341839104] Thread of gender 1 entered bathroom.
+[140616897025792] Leaving bathroom... 
+[140617417373440] Leaving bathroom... 
+[140617392195328] Leaving bathroom... 
+Thread ID: 140617392195328
+Gender: Female
+Number of loops: 5
+Minimum time spent in the queue in seconds: 27.000000
+Average time spent in the queue in seconds: 453.000000
+Maximum time spent in the queue in seconds: 1138.000000
+
+[140616930596608] Thread of gender 1 entered bathroom.
+[140616947382016] Leaving bathroom... 
+[140616855062272] Thread of gender 1 entered bathroom.
+[140616964167424] Thread of gender 1 entered bathroom.
+[140616997738240] Leaving bathroom... 
+Thread ID: 140616997738240
+Gender: Female
+Number of loops: 3
+Minimum time spent in the queue in seconds: 246.000000
+Average time spent in the queue in seconds: 881.000000
+Maximum time spent in the queue in seconds: 1623.000000
+
+[140617316660992] Thread of gender 1 entered bathroom.
+[140616980952832] Leaving bathroom... 
+[140617266304768] Leaving bathroom... 
+Thread ID: 140617266304768
+Gender: Female
+Number of loops: 4
+Minimum time spent in the queue in seconds: 7.000000
+Average time spent in the queue in seconds: 307.750000
+Maximum time spent in the queue in seconds: 911.000000
+
+[140616897025792] Thread of gender 1 entered bathroom.
+[140617274697472] Leaving bathroom... 
+[140617341839104] Leaving bathroom... 
+Thread ID: 140617341839104
+Gender: Female
+Number of loops: 6
+Minimum time spent in the queue in seconds: 21.000000
+Average time spent in the queue in seconds: 334.500000
+Maximum time spent in the queue in seconds: 900.000000
+
+[140617316660992] Leaving bathroom... 
+[140617090057984] Thread of gender 1 entered bathroom.
+[140617257912064] Thread of gender 1 entered bathroom.
+[140616938989312] Thread of gender 1 entered bathroom.
+[140616930596608] Leaving bathroom... 
+[140617476122368] Thread of gender 1 entered bathroom.
+[140617509693184] Thread of gender 1 entered bathroom.
+[140616762742528] Thread of gender 1 entered bathroom.
+[140617492907776] Thread of gender 1 entered bathroom.
+[140616855062272] Leaving bathroom... 
+[140616787920640] Leaving bathroom... 
+[140617090057984] Leaving bathroom... 
+Thread ID: 140617090057984
+Gender: Female
+Number of loops: 6
+Minimum time spent in the queue in seconds: 4.000000
+Average time spent in the queue in seconds: 290.166667
+Maximum time spent in the queue in seconds: 862.000000
+
+[140617417373440] Thread of gender 1 entered bathroom.
+[140616938989312] Leaving bathroom... 
+[140616880240384] Thread of gender 1 entered bathroom.
+[140617509693184] Leaving bathroom... 
+[140617148806912] Thread of gender 1 entered bathroom.
+[140616838276864] Thread of gender 1 entered bathroom.
+[140616964167424] Leaving bathroom... 
+[140616678815488] Thread of gender 1 entered bathroom.
+[140617476122368] Leaving bathroom... 
+Thread ID: 140617476122368
+Gender: Female
+Number of loops: 5
+Minimum time spent in the queue in seconds: 85.000000
+Average time spent in the queue in seconds: 451.000000
+Maximum time spent in the queue in seconds: 1174.000000
+
+[140617492907776] Leaving bathroom... 
+[140617257912064] Leaving bathroom... 
+Thread ID: 140617257912064
+Gender: Female
+Number of loops: 6
+Minimum time spent in the queue in seconds: 7.000000
+Average time spent in the queue in seconds: 123.000000
+Maximum time spent in the queue in seconds: 438.000000
+
+[140617417373440] Leaving bathroom... 
+Thread ID: 140617417373440
+Gender: Female
+Number of loops: 7
+Minimum time spent in the queue in seconds: 5.000000
+Average time spent in the queue in seconds: 330.428571
+Maximum time spent in the queue in seconds: 1189.000000
+
+[140617148806912] Leaving bathroom... 
+Thread ID: 140617148806912
+Gender: Female
+Number of loops: 6
+Minimum time spent in the queue in seconds: 4.000000
+Average time spent in the queue in seconds: 240.500000
+Maximum time spent in the queue in seconds: 855.000000
+
+[140617492907776] Thread of gender 1 entered bathroom.
+[140616947382016] Thread of gender 1 entered bathroom.
+[140616880240384] Leaving bathroom... 
+[140616855062272] Thread of gender 1 entered bathroom.
+[140616838276864] Leaving bathroom... 
+Thread ID: 140616838276864
+Gender: Female
+Number of loops: 4
+Minimum time spent in the queue in seconds: 5.000000
+Average time spent in the queue in seconds: 358.000000
+Maximum time spent in the queue in seconds: 903.000000
+
+[140617274697472] Thread of gender 1 entered bathroom.
+[140617316660992] Thread of gender 1 entered bathroom.
+[140616980952832] Thread of gender 1 entered bathroom.
+[140616930596608] Thread of gender 1 entered bathroom.
+[140616938989312] Thread of gender 1 entered bathroom.
+[140616787920640] Thread of gender 1 entered bathroom.
+[140616762742528] Leaving bathroom... 
+Thread ID: 140616762742528
+Gender: Female
+Number of loops: 4
+Minimum time spent in the queue in seconds: 5.000000
+Average time spent in the queue in seconds: 107.500000
+Maximum time spent in the queue in seconds: 394.000000
+
+[140617492907776] Leaving bathroom... 
+Thread ID: 140617492907776
+Gender: Female
+Number of loops: 7
+Minimum time spent in the queue in seconds: 8.000000
+Average time spent in the queue in seconds: 301.428571
+Maximum time spent in the queue in seconds: 883.000000
+
+[140616964167424] Thread of gender 1 entered bathroom.
+[140616880240384] Thread of gender 1 entered bathroom.
+[140617467729664] Thread of gender 1 entered bathroom.
+[140617215948544] Thread of gender 1 entered bathroom.
+[140616947382016] Leaving bathroom... 
+Thread ID: 140616947382016
+Gender: Female
+Number of loops: 4
+Minimum time spent in the queue in seconds: 8.000000
+Average time spent in the queue in seconds: 81.750000
+Maximum time spent in the queue in seconds: 241.000000
+
+[140616938989312] Leaving bathroom... 
+[140617274697472] Leaving bathroom... 
+[140616678815488] Leaving bathroom... 
+[140616897025792] Leaving bathroom... 
+[140616980952832] Leaving bathroom... 
+Thread ID: 140616980952832
+Gender: Female
+Number of loops: 4
+Minimum time spent in the queue in seconds: 81.000000
+Average time spent in the queue in seconds: 428.000000
+Maximum time spent in the queue in seconds: 871.000000
+
+[140617509693184] Thread of gender 1 entered bathroom.
+[140616787920640] Leaving bathroom... 
+[140617316660992] Leaving bathroom... 
+Thread ID: 140617316660992
+Gender: Female
+Number of loops: 6
+Minimum time spent in the queue in seconds: 80.000000
+Average time spent in the queue in seconds: 427.500000
+Maximum time spent in the queue in seconds: 1177.000000
+
+[140616930596608] Leaving bathroom... 
+[140616964167424] Leaving bathroom... 
+[140616855062272] Leaving bathroom... 
+[140616880240384] Leaving bathroom... 
+[140617467729664] Leaving bathroom... 
+[140617215948544] Leaving bathroom... 
+[140616897025792] Thread of gender 1 entered bathroom.
+[140617509693184] Leaving bathroom... 
+Thread ID: 140617509693184
+Gender: Female
+Number of loops: 8
+Minimum time spent in the queue in seconds: 8.000000
+Average time spent in the queue in seconds: 299.875000
+Maximum time spent in the queue in seconds: 1166.000000
+
+[140616897025792] Leaving bathroom...    Bathroom empty! Signaling...
+Thread ID: 140616897025792
+Gender: Female
+Number of loops: 4
+Minimum time spent in the queue in seconds: 5.000000
+Average time spent in the queue in seconds: 391.500000
+Maximum time spent in the queue in seconds: 1357.000000
+
+[140616787920640] Thread of gender 1 entered bathroom.
+   I was the first to enter. Bathroom gender is now 1.
+[140617467729664] Thread of gender 1 entered bathroom.
+[140617501300480] Thread of gender 0 waiting.
+[140617350231808] Thread of gender 0 waiting.
+[140617333446400] Thread of gender 0 waiting.
+[140617291482880] Thread of gender 0 waiting.
+[140617249519360] Thread of gender 0 waiting.
+[140617123628800] Thread of gender 0 waiting.
+[140616871847680] Thread of gender 0 waiting.
+[140616745957120] Thread of gender 0 waiting.
+[140616695600896] Thread of gender 0 waiting.
+[140616687208192] Thread of gender 0 waiting.
+[140617408980736] Thread of gender 0 waiting.
+[140617450944256] Thread of gender 0 waiting.
+[140616804706048] Thread of gender 0 waiting.
+[140617241126656] Thread of gender 0 waiting.
+[140617098450688] Thread of gender 0 waiting.
+[140617039701760] Thread of gender 0 waiting.
+[140617115236096] Thread of gender 0 waiting.
+[140617232733952] Thread of gender 0 waiting.
+[140617081665280] Thread of gender 0 waiting.
+[140617064879872] Thread of gender 0 waiting.
+[140617031309056] Thread of gender 0 waiting.
+[140617022916352] Thread of gender 0 waiting.
+[140617182377728] Thread of gender 0 waiting.
+[140617140414208] Thread of gender 0 waiting.
+[140617425766144] Thread of gender 0 waiting.
+[140617383802624] Thread of gender 0 waiting.
+[140617375409920] Thread of gender 0 waiting.
+[140617056487168] Thread of gender 0 waiting.
+[140617308268288] Thread of gender 0 waiting.
+[140617358624512] Thread of gender 0 waiting.
+[140617199163136] Thread of gender 0 waiting.
+[140616989345536] Thread of gender 0 waiting.
+[140616972560128] Thread of gender 0 waiting.
+[140616955774720] Thread of gender 0 waiting.
+[140616922203904] Thread of gender 0 waiting.
+[140616905418496] Thread of gender 0 waiting.
+[140616888633088] Thread of gender 0 waiting.
+[140616863454976] Thread of gender 0 waiting.
+[140616846669568] Thread of gender 0 waiting.
+[140616829884160] Thread of gender 0 waiting.
+[140616796313344] Thread of gender 0 waiting.
+[140616771135232] Thread of gender 0 waiting.
+[140616754349824] Thread of gender 0 waiting.
+[140616737564416] Thread of gender 0 waiting.
+[140616712386304] Thread of gender 0 waiting.
+[140617299875584] Thread of gender 0 waiting.
+[140617367017216] Thread of gender 0 waiting.
+[140616821491456] Thread of gender 0 waiting.
+[140616729171712] Thread of gender 0 waiting.
+[140616703993600] Thread of gender 0 waiting.
+[140616813098752] Thread of gender 0 waiting.
+[140617459336960] Thread of gender 0 waiting.
+[140616787920640] Leaving bathroom... 
+Thread ID: 140616787920640
+Gender: Female
+Number of loops: 6
+Minimum time spent in the queue in seconds: 4.000000
+Average time spent in the queue in seconds: 254.333333
+Maximum time spent in the queue in seconds: 918.000000
+
+[140617215948544] Thread of gender 1 entered bathroom.
+[140617467729664] Leaving bathroom... 
+[140616938989312] Thread of gender 1 entered bathroom.
+[140616678815488] Thread of gender 1 entered bathroom.
+[140617274697472] Thread of gender 1 entered bathroom.
+Thread ID: 140617467729664
+Gender: Female
+Number of loops: 4
+Minimum time spent in the queue in seconds: 4.000000
+[140616880240384] Thread of gender 1 entered bathroom.
+Average time spent in the queue in seconds: 4.500000
+Maximum time spent in the queue in seconds: 6.000000
+
+[140617215948544] Leaving bathroom... 
+[140616930596608] Thread of gender 1 entered bathroom.
+[140616938989312] Leaving bathroom... 
+[140616880240384] Leaving bathroom... 
+Thread ID: 140616880240384
+Gender: Female
+Number of loops: 6
+Minimum time spent in the queue in seconds: 7.000000
+Average time spent in the queue in seconds: 216.166667
+Maximum time spent in the queue in seconds: 890.000000
+
+[140616678815488] Leaving bathroom... 
+[140617274697472] Leaving bathroom... 
+[140616930596608] Leaving bathroom...    Bathroom empty! Signaling...
+[140616964167424] Thread of gender 1 entered bathroom.
+   I was the first to enter. Bathroom gender is now 1.
+[140617501300480] Thread of gender 0 waiting.
+[140617350231808] Thread of gender 0 waiting.
+[140617333446400] Thread of gender 0 waiting.
+[140617249519360] Thread of gender 0 waiting.
+[140617123628800] Thread of gender 0 waiting.
+[140616871847680] Thread of gender 0 waiting.
+[140616855062272] Thread of gender 1 entered bathroom.
+[140616745957120] Thread of gender 0 waiting.
+[140616695600896] Thread of gender 0 waiting.
+[140616687208192] Thread of gender 0 waiting.
+[140617408980736] Thread of gender 0 waiting.
+[140617450944256] Thread of gender 0 waiting.
+[140616804706048] Thread of gender 0 waiting.
+[140617241126656] Thread of gender 0 waiting.
+[140617098450688] Thread of gender 0 waiting.
+[140617039701760] Thread of gender 0 waiting.
+[140617115236096] Thread of gender 0 waiting.
+[140617232733952] Thread of gender 0 waiting.
+[140617081665280] Thread of gender 0 waiting.
+[140617064879872] Thread of gender 0 waiting.
+[140617031309056] Thread of gender 0 waiting.
+[140617022916352] Thread of gender 0 waiting.
+[140617182377728] Thread of gender 0 waiting.
+[140617140414208] Thread of gender 0 waiting.
+[140617425766144] Thread of gender 0 waiting.
+[140617383802624] Thread of gender 0 waiting.
+[140617375409920] Thread of gender 0 waiting.
+[140617056487168] Thread of gender 0 waiting.
+[140617308268288] Thread of gender 0 waiting.
+[140617358624512] Thread of gender 0 waiting.
+[140617199163136] Thread of gender 0 waiting.
+[140616989345536] Thread of gender 0 waiting.
+[140616972560128] Thread of gender 0 waiting.
+[140616855062272] Leaving bathroom... 
+Thread ID: 140616855062272
+Gender: Female
+Number of loops: 7
+Minimum time spent in the queue in seconds: 7.000000
+Average time spent in the queue in seconds: 186.000000
+Maximum time spent in the queue in seconds: 895.000000
+
+[140617291482880] Thread of gender 0 waiting.
+[140616955774720] Thread of gender 0 waiting.
+[140616922203904] Thread of gender 0 waiting.
+[140616905418496] Thread of gender 0 waiting.
+[140616888633088] Thread of gender 0 waiting.
+[140616863454976] Thread of gender 0 waiting.
+[140616964167424] Leaving bathroom...    Bathroom empty! Signaling...
+[140616846669568] Thread of gender 0 entered bathroom.
+   I was the first to enter. Bathroom gender is now 0.
+[140616938989312] Thread of gender 1 waiting.
+[140616930596608] Thread of gender 1 waiting.
+[140616829884160] Thread of gender 0 entered bathroom.
+[140616796313344] Thread of gender 0 entered bathroom.
+[140616771135232] Thread of gender 0 entered bathroom.
+[140616754349824] Thread of gender 0 entered bathroom.
+[140616737564416] Thread of gender 0 entered bathroom.
+[140616712386304] Thread of gender 0 entered bathroom.
+[140617299875584] Thread of gender 0 entered bathroom.
+[140616678815488] Thread of gender 1 waiting.
+[140617367017216] Thread of gender 0 entered bathroom.
+[140617274697472] Thread of gender 1 waiting.
+[140617215948544] Thread of gender 1 waiting.
+[140617501300480] Thread of gender 0 entered bathroom.
+[140616821491456] Thread of gender 0 entered bathroom.
+[140616729171712] Thread of gender 0 entered bathroom.
+[140616813098752] Thread of gender 0 entered bathroom.
+[140617459336960] Thread of gender 0 entered bathroom.
+[140617350231808] Thread of gender 0 entered bathroom.
+[140617333446400] Thread of gender 0 entered bathroom.
+[140617249519360] Thread of gender 0 entered bathroom.
+[140617123628800] Thread of gender 0 entered bathroom.
+[140616871847680] Thread of gender 0 entered bathroom.
+[140616745957120] Thread of gender 0 entered bathroom.
+[140616695600896] Thread of gender 0 entered bathroom.
+[140616687208192] Thread of gender 0 entered bathroom.
+[140617408980736] Thread of gender 0 entered bathroom.
+[140617450944256] Thread of gender 0 entered bathroom.
+[140616871847680] Leaving bathroom... 
+[140616804706048] Thread of gender 0 entered bathroom.
+[140617241126656] Thread of gender 0 entered bathroom.
+[140617098450688] Thread of gender 0 entered bathroom.
+[140617039701760] Thread of gender 0 entered bathroom.
+[140617115236096] Thread of gender 0 entered bathroom.
+[140617232733952] Thread of gender 0 entered bathroom.
+[140617123628800] Leaving bathroom... 
+[140617081665280] Thread of gender 0 entered bathroom.
+[140617064879872] Thread of gender 0 entered bathroom.
+[140617031309056] Thread of gender 0 entered bathroom.
+[140617022916352] Thread of gender 0 entered bathroom.
+[140617182377728] Thread of gender 0 entered bathroom.
+[140617140414208] Thread of gender 0 entered bathroom.
+[140617425766144] Thread of gender 0 entered bathroom.
+[140617383802624] Thread of gender 0 entered bathroom.
+[140617375409920] Thread of gender 0 entered bathroom.
+[140617450944256] Leaving bathroom... 
+[140617241126656] Leaving bathroom... 
+[140617115236096] Leaving bathroom... 
+[140617098450688] Leaving bathroom... 
+[140617081665280] Leaving bathroom... 
+[140617056487168] Thread of gender 0 entered bathroom.
+[140617308268288] Thread of gender 0 entered bathroom.
+[140617182377728] Leaving bathroom... 
+[140617039701760] Leaving bathroom... 
+[140617031309056] Leaving bathroom... 
+[140617358624512] Thread of gender 0 entered bathroom.
+[140617199163136] Thread of gender 0 entered bathroom.
+[140616989345536] Thread of gender 0 entered bathroom.
+[140616972560128] Thread of gender 0 entered bathroom.
+[140616871847680] Thread of gender 0 entered bathroom.
+[140616804706048] Leaving bathroom... 
+[140616813098752] Leaving bathroom... 
+[140616745957120] Leaving bathroom... 
+[140616729171712] Leaving bathroom... 
+[140616695600896] Leaving bathroom... 
+[140616687208192] Leaving bathroom... 
+Thread ID: 140616687208192
+Gender: Male
+Number of loops: 1
+Minimum time spent in the queue in seconds: 9942.000000
+Average time spent in the queue in seconds: 9942.000000
+Maximum time spent in the queue in seconds: 9942.000000
+
+[140617308268288] Leaving bathroom... 
+[140617291482880] Thread of gender 0 entered bathroom.
+[140617241126656] Thread of gender 0 entered bathroom.
+[140617123628800] Thread of gender 0 entered bathroom.
+[140616871847680] Leaving bathroom... 
+[140617241126656] Leaving bathroom... 
+[140617182377728] Thread of gender 0 entered bathroom.
+[140617081665280] Thread of gender 0 entered bathroom.
+[140616813098752] Thread of gender 0 entered bathroom.
+[140617291482880] Leaving bathroom... 
+[140617123628800] Leaving bathroom... 
+[140616888633088] Thread of gender 0 entered bathroom.
+[140616863454976] Thread of gender 0 entered bathroom.
+[140616846669568] Leaving bathroom... 
+[140616829884160] Leaving bathroom... 
+[140616796313344] Leaving bathroom... 
+[140616771135232] Leaving bathroom... 
+[140616754349824] Leaving bathroom... 
+[140616737564416] Leaving bathroom... 
+[140616712386304] Leaving bathroom... 
+[140617299875584] Leaving bathroom... 
+[140617367017216] Leaving bathroom... 
+[140617501300480] Leaving bathroom... 
+[140616821491456] Leaving bathroom... 
+[140616703993600] Thread of gender 0 entered bathroom.
+[140617299875584] Thread of gender 0 entered bathroom.
+[140616888633088] Leaving bathroom... 
+Thread ID: 140616888633088
+Gender: Male
+Number of loops: 1
+Minimum time spent in the queue in seconds: 8533.000000
+Average time spent in the queue in seconds: 8533.000000
+Maximum time spent in the queue in seconds: 8533.000000
+
+[140616863454976] Leaving bathroom... 
+[140617299875584] Leaving bathroom... 
+[140616703993600] Leaving bathroom... 
+[140616829884160] Thread of gender 0 entered bathroom.
+[140616754349824] Thread of gender 0 entered bathroom.
+[140616829884160] Leaving bathroom... 
+[140616821491456] Thread of gender 0 entered bathroom.
+[140616771135232] Thread of gender 0 entered bathroom.
+[140617367017216] Thread of gender 0 entered bathroom.
+[140617501300480] Thread of gender 0 entered bathroom.
+[140616796313344] Thread of gender 0 entered bathroom.
+[140616821491456] Leaving bathroom... 
+[140616754349824] Leaving bathroom... 
+[140616737564416] Thread of gender 0 entered bathroom.
+[140616703993600] Thread of gender 0 entered bathroom.
+[140617367017216] Leaving bathroom... 
+[140617459336960] Leaving bathroom... 
+[140617333446400] Leaving bathroom... 
+[140617459336960] Thread of gender 0 entered bathroom.
+[140617308268288] Thread of gender 0 entered bathroom.
+[140617241126656] Thread of gender 0 entered bathroom.
+[140617182377728] Leaving bathroom... 
+[140617115236096] Thread of gender 0 entered bathroom.
+Thread ID: 140617123628800
+Gender: Male
+Number of loops: 2
+Minimum time spent in the queue in seconds: 7.000000
+Average time spent in the queue in seconds: 4983.500000
+Maximum time spent in the queue in seconds: 9960.000000
+
+[140617081665280] Leaving bathroom... 
+[140617039701760] Thread of gender 0 entered bathroom.
+[140617031309056] Thread of gender 0 entered bathroom.
+[140616871847680] Thread of gender 0 entered bathroom.
+[140616804706048] Thread of gender 0 entered bathroom.
+[140616813098752] Leaving bathroom... 
+[140616745957120] Thread of gender 0 entered bathroom.
+[140616729171712] Thread of gender 0 entered bathroom.
+[140617081665280] Thread of gender 0 entered bathroom.
+[140616695600896] Thread of gender 0 entered bathroom.
+[140617291482880] Thread of gender 0 entered bathroom.
+[140617350231808] Leaving bathroom... 
+[140617249519360] Leaving bathroom... 
+[140617375409920] Leaving bathroom... 
+[140617408980736] Leaving bathroom... 
+[140617232733952] Leaving bathroom... 
+[140617140414208] Leaving bathroom... 
+[140617064879872] Leaving bathroom... 
+[140617022916352] Leaving bathroom... 
+[140617383802624] Leaving bathroom... 
+[140617425766144] Leaving bathroom... 
+[140617098450688] Thread of gender 0 entered bathroom.
+[140617115236096] Leaving bathroom... 
+[140617039701760] Leaving bathroom... 
+[140617031309056] Leaving bathroom... 
+[140616871847680] Leaving bathroom... 
+[140616804706048] Leaving bathroom... 
+[140616729171712] Leaving bathroom... 
+[140617291482880] Leaving bathroom... 
+[140617056487168] Leaving bathroom... 
+[140616989345536] Leaving bathroom... 
+[140617450944256] Thread of gender 0 entered bathroom.
+[140617199163136] Leaving bathroom... 
+[140617358624512] Leaving bathroom... 
+[140616972560128] Leaving bathroom... 
+[140617081665280] Leaving bathroom... 
+[140616955774720] Thread of gender 0 entered bathroom.
+[140616922203904] Thread of gender 0 entered bathroom.
+[140616905418496] Thread of gender 0 entered bathroom.
+[140617501300480] Leaving bathroom... 
+[140616964167424] Thread of gender 1 waiting.
+[140616771135232] Leaving bathroom... 
+Thread ID: 140616771135232
+Gender: Male
+Number of loops: 2
+Minimum time spent in the queue in seconds: 4.000000
+Average time spent in the queue in seconds: 3751.500000
+Maximum time spent in the queue in seconds: 7499.000000
+
+[140616813098752] Thread of gender 0 entered bathroom.
+[140616737564416] Leaving bathroom... 
+[140616745957120] Leaving bathroom... 
+[140616695600896] Leaving bathroom... 
+[140617299875584] Thread of gender 0 entered bathroom.
+[140616796313344] Leaving bathroom... 
+[140616821491456] Thread of gender 0 entered bathroom.
+[140616846669568] Thread of gender 0 entered bathroom.
+[140616829884160] Thread of gender 0 entered bathroom.
+[140616712386304] Thread of gender 0 entered bathroom.
+[140616754349824] Thread of gender 0 entered bathroom.
+[140616703993600] Leaving bathroom... 
+Thread ID: 140616703993600
+Gender: Male
+Number of loops: 2
+Minimum time spent in the queue in seconds: 3.000000
+Average time spent in the queue in seconds: 4013.500000
+Maximum time spent in the queue in seconds: 8024.000000
+
+[140616863454976] Thread of gender 0 entered bathroom.
+[140617459336960] Leaving bathroom... 
+Thread ID: 140617459336960
+Gender: Male
+Number of loops: 2
+Minimum time spent in the queue in seconds: 17.000000
+Average time spent in the queue in seconds: 5029.000000
+Maximum time spent in the queue in seconds: 10041.000000
+
+[140617308268288] Leaving bathroom... 
+[140617241126656] Leaving bathroom... 
+Thread ID: 140617241126656
+Gender: Male
+Number of loops: 3
+Minimum time spent in the queue in seconds: 4.000000
+Average time spent in the queue in seconds: 3312.333333
+Maximum time spent in the queue in seconds: 9924.000000
+
+[140616821491456] Leaving bathroom... 
+[140617367017216] Thread of gender 0 entered bathroom.
+[140617425766144] Thread of gender 0 entered bathroom.
+[140616922203904] Leaving bathroom... 
+[140616905418496] Leaving bathroom... 
+[140616863454976] Leaving bathroom... 
+[140616846669568] Leaving bathroom... 
+[140616813098752] Leaving bathroom... 
+[140616754349824] Leaving bathroom... 
+[140616712386304] Leaving bathroom... 
+[140617299875584] Leaving bathroom... 
+[140617450944256] Leaving bathroom... 
+[140617098450688] Leaving bathroom... 
+[140616989345536] Thread of gender 0 entered bathroom.
+[140617039701760] Thread of gender 0 entered bathroom.
+[140616955774720] Leaving bathroom... 
+[140616829884160] Leaving bathroom... 
+[140616745957120] Thread of gender 0 entered bathroom.
+[140617367017216] Leaving bathroom... 
+Thread ID: 140617367017216
+Gender: Male
+Number of loops: 3
+Minimum time spent in the queue in seconds: 4.000000
+Average time spent in the queue in seconds: 2771.333333
+Maximum time spent in the queue in seconds: 7514.000000
+
+[140617291482880] Thread of gender 0 entered bathroom.
+[140617450944256] Thread of gender 0 entered bathroom.
+[140617333446400] Thread of gender 0 entered bathroom.
+[140617182377728] Thread of gender 0 entered bathroom.
+[140616922203904] Thread of gender 0 entered bathroom.
+[140616737564416] Thread of gender 0 entered bathroom.
+[140617039701760] Leaving bathroom... 
+[140616729171712] Thread of gender 0 entered bathroom.
+[140616695600896] Thread of gender 0 entered bathroom.
+[140617291482880] Leaving bathroom... 
+Thread ID: 140617291482880
+Gender: Male
+Number of loops: 3
+Minimum time spent in the queue in seconds: 6.000000
+Average time spent in the queue in seconds: 3568.000000
+Maximum time spent in the queue in seconds: 10690.000000
+
+[140617375409920] Thread of gender 0 entered bathroom.
+[140617408980736] Thread of gender 0 entered bathroom.
+[140617425766144] Leaving bathroom... 
+Thread ID: 140617425766144
+Gender: Male
+Number of loops: 2
+Minimum time spent in the queue in seconds: 359.000000
+Average time spent in the queue in seconds: 5046.000000
+Maximum time spent in the queue in seconds: 9733.000000
+
+[140617333446400] Leaving bathroom... 
+[140617182377728] Leaving bathroom... 
+[140617115236096] Thread of gender 0 entered bathroom.
+[140617081665280] Thread of gender 0 entered bathroom.
+[140617031309056] Thread of gender 0 entered bathroom.
+[140616955774720] Thread of gender 0 entered bathroom.
+[140616922203904] Leaving bathroom... 
+[140616737564416] Leaving bathroom... 
+[140617350231808] Thread of gender 0 entered bathroom.
+[140617450944256] Leaving bathroom... 
+[140617249519360] Thread of gender 0 entered bathroom.
+[140617232733952] Thread of gender 0 entered bathroom.
+[140617199163136] Thread of gender 0 entered bathroom.
+[140617140414208] Thread of gender 0 entered bathroom.
+[140617098450688] Thread of gender 0 entered bathroom.
+[140617064879872] Thread of gender 0 entered bathroom.
+[140617056487168] Thread of gender 0 entered bathroom.
+[140617022916352] Thread of gender 0 entered bathroom.
+[140617358624512] Thread of gender 0 entered bathroom.
+[140616989345536] Leaving bathroom... 
+[140617501300480] Thread of gender 0 entered bathroom.
+[140617308268288] Thread of gender 0 entered bathroom.
+[140617308268288] Leaving bathroom... 
+Thread ID: 140617308268288
+Gender: Male
+Number of loops: 3
+Minimum time spent in the queue in seconds: 4.000000
+Average time spent in the queue in seconds: 3263.000000
+Maximum time spent in the queue in seconds: 9779.000000
+
+[140617115236096] Leaving bathroom... 
+[140617031309056] Leaving bathroom... 
+[140616955774720] Leaving bathroom... 
+[140616863454976] Thread of gender 0 entered bathroom.
+[140616846669568] Thread of gender 0 entered bathroom.
+[140616829884160] Thread of gender 0 entered bathroom.
+[140616796313344] Thread of gender 0 entered bathroom.
+[140616804706048] Thread of gender 0 entered bathroom.
+[140616754349824] Thread of gender 0 entered bathroom.
+[140616745957120] Leaving bathroom... 
+[140616712386304] Thread of gender 0 entered bathroom.
+[140616695600896] Leaving bathroom... 
+[140616905418496] Thread of gender 0 entered bathroom.
+[140616821491456] Thread of gender 0 entered bathroom.
+[140616729171712] Leaving bathroom... 
+[140617299875584] Thread of gender 0 entered bathroom.
+[140617350231808] Leaving bathroom... 
+[140617408980736] Leaving bathroom... 
+Thread ID: 140617408980736
+Gender: Male
+Number of loops: 2
+Minimum time spent in the queue in seconds: 10.000000
+Average time spent in the queue in seconds: 5001.500000
+Maximum time spent in the queue in seconds: 9993.000000
+
+[140617182377728] Thread of gender 0 entered bathroom.
+[140617031309056] Thread of gender 0 entered bathroom.
+[140616863454976] Leaving bathroom... 
+Thread ID: 140616863454976
+Gender: Male
+Number of loops: 3
+Minimum time spent in the queue in seconds: 6.000000
+Average time spent in the queue in seconds: 3080.666667
+Maximum time spent in the queue in seconds: 8528.000000
+
+[140616871847680] Thread of gender 0 entered bathroom.
+[140616846669568] Leaving bathroom... 
+[140616804706048] Leaving bathroom... 
+[140616796313344] Leaving bathroom... 
+[140616821491456] Leaving bathroom... 
+[140616813098752] Thread of gender 0 entered bathroom.
+[140616754349824] Leaving bathroom... 
+Thread ID: 140616754349824
+Gender: Male
+Number of loops: 4
+Minimum time spent in the queue in seconds: 5.000000
+Average time spent in the queue in seconds: 2154.000000
+Maximum time spent in the queue in seconds: 7502.000000
+
+[140617383802624] Thread of gender 0 entered bathroom.
+[140617375409920] Leaving bathroom... 
+[140617450944256] Thread of gender 0 entered bathroom.
+[140617022916352] Leaving bathroom... 
+[140616905418496] Leaving bathroom... 
+[140616871847680] Leaving bathroom... 
+[140616829884160] Leaving bathroom... 
+[140616712386304] Leaving bathroom... 
+[140617249519360] Leaving bathroom... 
+[140617232733952] Leaving bathroom... 
+[140617199163136] Leaving bathroom... 
+[140617140414208] Leaving bathroom... 
+[140617098450688] Leaving bathroom... 
+[140617064879872] Leaving bathroom... 
+[140617056487168] Leaving bathroom... 
+[140617358624512] Leaving bathroom... 
+Thread ID: 140617358624512
+Gender: Male
+Number of loops: 2
+Minimum time spent in the queue in seconds: 6.000000
+Average time spent in the queue in seconds: 4839.500000
+Maximum time spent in the queue in seconds: 9673.000000
+
+[140617182377728] Leaving bathroom... 
+[140617501300480] Leaving bathroom... 
+[140617081665280] Leaving bathroom... 
+[140616695600896] Thread of gender 0 entered bathroom.
+[140617039701760] Thread of gender 0 entered bathroom.
+[140617333446400] Thread of gender 0 entered bathroom.
+[140617383802624] Leaving bathroom... 
+[140617350231808] Thread of gender 0 entered bathroom.
+[140617450944256] Leaving bathroom... 
+[140617249519360] Thread of gender 0 entered bathroom.
+[140616846669568] Thread of gender 0 entered bathroom.
+[140616796313344] Thread of gender 0 entered bathroom.
+[140616813098752] Leaving bathroom... 
+[140616745957120] Thread of gender 0 entered bathroom.
+[140616695600896] Leaving bathroom... 
+[140616972560128] Thread of gender 0 entered bathroom.
+[140617031309056] Leaving bathroom... 
+[140617039701760] Leaving bathroom... 
+[140616804706048] Thread of gender 0 entered bathroom.
+[140616796313344] Leaving bathroom... 
+[140616821491456] Thread of gender 0 entered bathroom.
+[140616955774720] Thread of gender 0 entered bathroom.
+[140616922203904] Thread of gender 0 entered bathroom.
+[140617299875584] Leaving bathroom... 
+[140617350231808] Leaving bathroom... 
+[140617232733952] Thread of gender 0 entered bathroom.
+[140617022916352] Thread of gender 0 entered bathroom.
+[140616989345536] Thread of gender 0 entered bathroom.
+[140616737564416] Thread of gender 0 entered bathroom.
+[140616955774720] Leaving bathroom... 
+[140616871847680] Thread of gender 0 entered bathroom.
+[140617333446400] Leaving bathroom... 
+[140616922203904] Leaving bathroom... 
+[140616846669568] Leaving bathroom... 
+[140616829884160] Thread of gender 0 entered bathroom.
+[140616804706048] Leaving bathroom... 
+[140616821491456] Leaving bathroom... 
+[140616745957120] Leaving bathroom... 
+[140616729171712] Thread of gender 0 entered bathroom.
+[140617249519360] Leaving bathroom... 
+[140616972560128] Leaving bathroom... 
+[140617140414208] Thread of gender 0 entered bathroom.
+[140617115236096] Thread of gender 0 entered bathroom.
+[140616871847680] Leaving bathroom... 
+[140617232733952] Leaving bathroom... 
+[140617140414208] Leaving bathroom... 
+[140617064879872] Thread of gender 0 entered bathroom.
+[140617022916352] Leaving bathroom... 
+Thread ID: 140617022916352
+Gender: Male
+Number of loops: 3
+Minimum time spent in the queue in seconds: 6.000000
+Average time spent in the queue in seconds: 3277.333333
+Maximum time spent in the queue in seconds: 9815.000000
+
+[140616989345536] Leaving bathroom... 
+[140617039701760] Thread of gender 0 entered bathroom.
+[140616871847680] Thread of gender 0 entered bathroom.
+[140617115236096] Leaving bathroom... 
+[140616829884160] Leaving bathroom... 
+Thread ID: 140616829884160
+Gender: Male
+Number of loops: 5
+Minimum time spent in the queue in seconds: 3.000000
+Average time spent in the queue in seconds: 1640.200000
+Maximum time spent in the queue in seconds: 7489.000000
+
+[140616905418496] Thread of gender 0 entered bathroom.
+[140616745957120] Thread of gender 0 entered bathroom.
+[140616737564416] Leaving bathroom... 
+[140617383802624] Thread of gender 0 entered bathroom.
+[140617249519360] Thread of gender 0 entered bathroom.
+[140617450944256] Thread of gender 0 entered bathroom.
+[140617350231808] Thread of gender 0 entered bathroom.
+[140617098450688] Thread of gender 0 entered bathroom.
+[140617064879872] Leaving bathroom... 
+[140617056487168] Thread of gender 0 entered bathroom.
+[140617375409920] Thread of gender 0 entered bathroom.
+[140617039701760] Leaving bathroom... 
+Thread ID: 140617039701760
+Gender: Male
+Number of loops: 5
+Minimum time spent in the queue in seconds: 4.000000
+Average time spent in the queue in seconds: 2087.800000
+Maximum time spent in the queue in seconds: 9898.000000
+
+[140616905418496] Leaving bathroom... 
+[140616846669568] Thread of gender 0 entered bathroom.
+[140616712386304] Thread of gender 0 entered bathroom.
+[140617501300480] Thread of gender 0 entered bathroom.
+[140617031309056] Thread of gender 0 entered bathroom.
+[140616871847680] Leaving bathroom... 
+[140616729171712] Leaving bathroom... 
+[140617299875584] Thread of gender 0 entered bathroom.
+[140617383802624] Leaving bathroom... 
+[140617350231808] Leaving bathroom... 
+[140617232733952] Thread of gender 0 entered bathroom.
+[140617199163136] Thread of gender 0 entered bathroom.
+[140617249519360] Leaving bathroom... 
+[140617098450688] Leaving bathroom... 
+[140617064879872] Thread of gender 0 entered bathroom.
+[140616972560128] Thread of gender 0 entered bathroom.
+[140617375409920] Leaving bathroom... 
+[140616745957120] Leaving bathroom... 
+Thread ID: 140616745957120
+Gender: Male
+Number of loops: 5
+Minimum time spent in the queue in seconds: 4.000000
+Average time spent in the queue in seconds: 2058.800000
+Maximum time spent in the queue in seconds: 9935.000000
+
+[140617299875584] Leaving bathroom... 
+[140617501300480] Leaving bathroom... 
+[140617182377728] Thread of gender 0 entered bathroom.
+[140616846669568] Leaving bathroom... 
+[140617450944256] Leaving bathroom... 
+[140617501300480] Thread of gender 0 entered bathroom.
+[140617031309056] Leaving bathroom... 
+Thread ID: 140617031309056
+Gender: Male
+Number of loops: 5
+Minimum time spent in the queue in seconds: 3.000000
+Average time spent in the queue in seconds: 1987.600000
+Maximum time spent in the queue in seconds: 9809.000000
+
+[140616955774720] Thread of gender 0 entered bathroom.
+[140616796313344] Thread of gender 0 entered bathroom.
+[140616821491456] Thread of gender 0 entered bathroom.
+[140616712386304] Leaving bathroom... 
+[140616922203904] Thread of gender 0 entered bathroom.
+[140617056487168] Leaving bathroom... 
+Thread ID: 140617056487168
+Gender: Male
+Number of loops: 3
+Minimum time spent in the queue in seconds: 6.000000
+Average time spent in the queue in seconds: 3331.666667
+Maximum time spent in the queue in seconds: 9759.000000
+
+[140616804706048] Thread of gender 0 entered bathroom.
+[140617333446400] Thread of gender 0 entered bathroom.
+[140617115236096] Thread of gender 0 entered bathroom.
+[140616695600896] Thread of gender 0 entered bathroom.
+[140617232733952] Leaving bathroom... 
+[140617199163136] Leaving bathroom... 
+[140617140414208] Thread of gender 0 entered bathroom.
+[140616972560128] Leaving bathroom... 
+[140616813098752] Thread of gender 0 entered bathroom.
+[140617182377728] Leaving bathroom... 
+Thread ID: 140617182377728
+Gender: Male
+Number of loops: 5
+Minimum time spent in the queue in seconds: 7.000000
+Average time spent in the queue in seconds: 2012.400000
+Maximum time spent in the queue in seconds: 9731.000000
+
+[140617081665280] Thread of gender 0 entered bathroom.
+[140616955774720] Leaving bathroom... 
+[140616922203904] Leaving bathroom... 
+[140617299875584] Thread of gender 0 entered bathroom.
+[140616989345536] Thread of gender 0 entered bathroom.
+[140617333446400] Leaving bathroom... 
+[140617501300480] Leaving bathroom... 
+[140617115236096] Leaving bathroom... 
+[140617081665280] Leaving bathroom... 
+[140616796313344] Leaving bathroom... 
+[140616804706048] Leaving bathroom... 
+[140616821491456] Leaving bathroom... 
+Thread ID: 140616821491456
+Gender: Male
+Number of loops: 6
+Minimum time spent in the queue in seconds: 5.000000
+Average time spent in the queue in seconds: 1445.666667
+Maximum time spent in the queue in seconds: 7330.000000
+
+[140616813098752] Leaving bathroom... 
+Thread ID: 140616813098752
+Gender: Male
+Number of loops: 5
+Minimum time spent in the queue in seconds: 6.000000
+Average time spent in the queue in seconds: 1608.600000
+Maximum time spent in the queue in seconds: 7350.000000
+
+[140616729171712] Thread of gender 0 entered bathroom.
+[140616695600896] Leaving bathroom... 
+[140617350231808] Thread of gender 0 entered bathroom.
+[140617140414208] Leaving bathroom... 
+[140617064879872] Leaving bathroom... 
+[140616989345536] Leaving bathroom... 
+[140617098450688] Thread of gender 0 entered bathroom.
+[140616905418496] Thread of gender 0 entered bathroom.
+[140616737564416] Thread of gender 0 entered bathroom.
+[140617299875584] Leaving bathroom... 
+Thread ID: 140617299875584
+Gender: Male
+Number of loops: 6
+Minimum time spent in the queue in seconds: 4.000000
+Average time spent in the queue in seconds: 1394.666667
+Maximum time spent in the queue in seconds: 7504.000000
+
+[140616905418496] Leaving bathroom... 
+[140616871847680] Thread of gender 0 entered bathroom.
+[140616846669568] Thread of gender 0 entered bathroom.
+[140616922203904] Thread of gender 0 entered bathroom.
+[140616712386304] Thread of gender 0 entered bathroom.
+[140616729171712] Leaving bathroom... 
+[140617375409920] Thread of gender 0 entered bathroom.
+[140617350231808] Leaving bathroom... 
+Thread ID: 140617350231808
+Gender: Male
+Number of loops: 5
+Minimum time spent in the queue in seconds: 8.000000
+Average time spent in the queue in seconds: 2051.400000
+Maximum time spent in the queue in seconds: 10052.000000
+
+[140617450944256] Thread of gender 0 entered bathroom.
+[140617232733952] Thread of gender 0 entered bathroom.
+[140617199163136] Thread of gender 0 entered bathroom.
+[140617249519360] Thread of gender 0 entered bathroom.
+[140617098450688] Leaving bathroom... 
+Thread ID: 140617098450688
+Gender: Male
+Number of loops: 5
+Minimum time spent in the queue in seconds: 7.000000
+Average time spent in the queue in seconds: 2240.000000
+Maximum time spent in the queue in seconds: 9912.000000
+
+[140616846669568] Leaving bathroom... 
+Thread ID: 140616846669568
+Gender: Male
+Number of loops: 6
+Minimum time spent in the queue in seconds: 4.000000
+Average time spent in the queue in seconds: 1401.666667
+Maximum time spent in the queue in seconds: 7465.000000
+
+[140617375409920] Leaving bathroom... 
+Thread ID: 140617375409920
+Gender: Male
+Number of loops: 4
+Minimum time spent in the queue in seconds: 7.000000
+Average time spent in the queue in seconds: 2464.000000
+Maximum time spent in the queue in seconds: 9742.000000
+
+[140617501300480] Thread of gender 0 entered bathroom.
+[140616922203904] Leaving bathroom... 
+[140616871847680] Leaving bathroom... 
+Thread ID: 140616871847680
+Gender: Male
+Number of loops: 7
+Minimum time spent in the queue in seconds: 3.000000
+Average time spent in the queue in seconds: 1513.714286
+Maximum time spent in the queue in seconds: 9941.000000
+
+[140616804706048] Thread of gender 0 entered bathroom.
+[140616737564416] Leaving bathroom... 
+[140617383802624] Thread of gender 0 entered bathroom.
+[140617140414208] Thread of gender 0 entered bathroom.
+[140617064879872] Thread of gender 0 entered bathroom.
+[140616712386304] Leaving bathroom... 
+[140617199163136] Leaving bathroom... 
+[140616989345536] Thread of gender 0 entered bathroom.
+[140617333446400] Thread of gender 0 entered bathroom.
+[140617081665280] Thread of gender 0 entered bathroom.
+[140616796313344] Thread of gender 0 entered bathroom.
+[140616695600896] Thread of gender 0 entered bathroom.
+[140617450944256] Leaving bathroom... 
+Thread ID: 140617450944256
+Gender: Male
+Number of loops: 6
+Minimum time spent in the queue in seconds: 7.000000
+Average time spent in the queue in seconds: 1871.833333
+Maximum time spent in the queue in seconds: 9991.000000
+
+[140617501300480] Leaving bathroom... 
+[140616695600896] Leaving bathroom... 
+Thread ID: 140616695600896
+Gender: Male
+Number of loops: 6
+Minimum time spent in the queue in seconds: 4.000000
+Average time spent in the queue in seconds: 1817.666667
+Maximum time spent in the queue in seconds: 9938.000000
+
+[140617140414208] Leaving bathroom... 
+[140617064879872] Leaving bathroom... 
+Thread ID: 140617064879872
+Gender: Male
+Number of loops: 5
+Minimum time spent in the queue in seconds: 6.000000
+Average time spent in the queue in seconds: 1971.600000
+Maximum time spent in the queue in seconds: 9804.000000
+
+[140616729171712] Thread of gender 0 entered bathroom.
+[140616955774720] Thread of gender 0 entered bathroom.
+[140617232733952] Leaving bathroom... 
+[140617333446400] Leaving bathroom... 
+[140616796313344] Leaving bathroom... 
+Thread ID: 140616796313344
+Gender: Male
+Number of loops: 6
+Minimum time spent in the queue in seconds: 4.000000
+Average time spent in the queue in seconds: 1373.333333
+Maximum time spent in the queue in seconds: 7493.000000
+
+[140616737564416] Thread of gender 0 entered bathroom.
+[140616804706048] Leaving bathroom... 
+[140616955774720] Leaving bathroom... 
+[140616922203904] Thread of gender 0 entered bathroom.
+[140616804706048] Thread of gender 0 entered bathroom.
+[140616737564416] Leaving bathroom... 
+[140616729171712] Leaving bathroom... 
+Thread ID: 140616729171712
+Gender: Male
+Number of loops: 6
+Minimum time spent in the queue in seconds: 4.000000
+Average time spent in the queue in seconds: 1323.833333
+Maximum time spent in the queue in seconds: 7303.000000
+
+[140616922203904] Leaving bathroom... 
+Thread ID: 140616922203904
+Gender: Male
+Number of loops: 6
+Minimum time spent in the queue in seconds: 3.000000
+Average time spent in the queue in seconds: 1650.833333
+Maximum time spent in the queue in seconds: 9466.000000
+
+[140617501300480] Thread of gender 0 entered bathroom.
+[140617501300480] Leaving bathroom... 
+Thread ID: 140617501300480
+Gender: Male
+Number of loops: 7
+Minimum time spent in the queue in seconds: 5.000000
+Average time spent in the queue in seconds: 1503.285714
+Maximum time spent in the queue in seconds: 10080.000000
+
+[140616804706048] Leaving bathroom... 
+[140616712386304] Thread of gender 0 entered bathroom.
+[140616737564416] Thread of gender 0 entered bathroom.
+[140616737564416] Leaving bathroom... 
+[140616712386304] Leaving bathroom... 
+[140617383802624] Leaving bathroom... 
+[140617249519360] Leaving bathroom... 
+Thread ID: 140617249519360
+Gender: Male
+Number of loops: 5
+Minimum time spent in the queue in seconds: 6.000000
+Average time spent in the queue in seconds: 2028.400000
+Maximum time spent in the queue in seconds: 9981.000000
+
+[140616905418496] Thread of gender 0 entered bathroom.
+[140617115236096] Thread of gender 0 entered bathroom.
+[140617081665280] Leaving bathroom... 
+[140617199163136] Thread of gender 0 entered bathroom.
+[140617140414208] Thread of gender 0 entered bathroom.
+[140616972560128] Thread of gender 0 entered bathroom.
+[140616989345536] Leaving bathroom... 
+Thread ID: 140616989345536
+Gender: Male
+Number of loops: 5
+Minimum time spent in the queue in seconds: 7.000000
+Average time spent in the queue in seconds: 1861.000000
+Maximum time spent in the queue in seconds: 8831.000000
+
+[140617140414208] Leaving bathroom... 
+[140617383802624] Thread of gender 0 entered bathroom.
+[140617199163136] Leaving bathroom... 
+[140616972560128] Leaving bathroom... 
+[140617333446400] Thread of gender 0 entered bathroom.
+[140617232733952] Thread of gender 0 entered bathroom.
+[140617115236096] Leaving bathroom... 
+[140616955774720] Thread of gender 0 entered bathroom.
+[140616905418496] Leaving bathroom... 
+Thread ID: 140616905418496
+Gender: Male
+Number of loops: 5
+Minimum time spent in the queue in seconds: 10.000000
+Average time spent in the queue in seconds: 2111.000000
+Maximum time spent in the queue in seconds: 9460.000000
+
+[140616804706048] Thread of gender 0 entered bathroom.
+[140617333446400] Leaving bathroom... 
+Thread ID: 140617333446400
+Gender: Male
+Number of loops: 6
+Minimum time spent in the queue in seconds: 8.000000
+Average time spent in the queue in seconds: 1760.666667
+Maximum time spent in the queue in seconds: 10057.000000
+
+[140616955774720] Leaving bathroom... 
+[140617383802624] Leaving bathroom... 
+[140617232733952] Leaving bathroom... 
+[140616804706048] Leaving bathroom...    Bathroom empty! Signaling...
+[140616938989312] Thread of gender 1 entered bathroom.
+   I was the first to enter. Bathroom gender is now 1.
+[140616930596608] Thread of gender 1 entered bathroom.
+[140616678815488] Thread of gender 1 entered bathroom.
+[140617274697472] Thread of gender 1 entered bathroom.
+[140617215948544] Thread of gender 1 entered bathroom.
+[140616964167424] Thread of gender 1 entered bathroom.
+[140617199163136] Thread of gender 0 waiting.
+[140617140414208] Thread of gender 0 waiting.
+[140617383802624] Thread of gender 0 waiting.
+[140616972560128] Thread of gender 0 waiting.
+[140617115236096] Thread of gender 0 waiting.
+[140616938989312] Leaving bathroom... 
+[140616930596608] Leaving bathroom... 
+[140616964167424] Leaving bathroom... 
+[140616804706048] Thread of gender 0 waiting.
+[140616678815488] Leaving bathroom... 
+[140617274697472] Leaving bathroom... 
+Thread ID: 140617274697472
+Gender: Female
+Number of loops: 5
+Minimum time spent in the queue in seconds: 7.000000
+Average time spent in the queue in seconds: 1926.000000
+Maximum time spent in the queue in seconds: 7659.000000
+
+[140617215948544] Leaving bathroom...    Bathroom empty! Signaling...
+[140617140414208] Thread of gender 0 entered bathroom.
+   I was the first to enter. Bathroom gender is now 0.
+[140617383802624] Thread of gender 0 entered bathroom.
+[140616972560128] Thread of gender 0 entered bathroom.
+[140617115236096] Thread of gender 0 entered bathroom.
+[140616804706048] Thread of gender 0 entered bathroom.
+[140617199163136] Thread of gender 0 entered bathroom.
+[140617383802624] Leaving bathroom... 
+Thread ID: 140617215948544
+Gender: Female
+Number of loops: 5
+Minimum time spent in the queue in seconds: 4.000000
+Average time spent in the queue in seconds: 1596.800000
+Maximum time spent in the queue in seconds: 7191.000000
+
+[140617115236096] Leaving bathroom... 
+Thread ID: 140617115236096
+Gender: Male
+Number of loops: 7
+Minimum time spent in the queue in seconds: 4.000000
+Average time spent in the queue in seconds: 1712.571429
+Maximum time spent in the queue in seconds: 9889.000000
+
+[140617232733952] Thread of gender 0 entered bathroom.
+[140617081665280] Thread of gender 0 entered bathroom.
+[140616712386304] Thread of gender 0 entered bathroom.
+[140616737564416] Thread of gender 0 entered bathroom.
+[140616955774720] Thread of gender 0 entered bathroom.
+[140617199163136] Leaving bathroom... 
+[140617383802624] Thread of gender 0 entered bathroom.
+[140617140414208] Leaving bathroom... 
+Thread ID: 140617140414208
+Gender: Male
+Number of loops: 7
+Minimum time spent in the queue in seconds: 4.000000
+Average time spent in the queue in seconds: 1447.428571
+Maximum time spent in the queue in seconds: 9730.000000
+
+[140617232733952] Leaving bathroom... 
+[140616972560128] Leaving bathroom... 
+Thread ID: 140616972560128
+Gender: Male
+Number of loops: 5
+Minimum time spent in the queue in seconds: 10.000000
+Average time spent in the queue in seconds: 2142.200000
+Maximum time spent in the queue in seconds: 8768.000000
+
+[140616938989312] Thread of gender 1 waiting.
+[140616930596608] Thread of gender 1 waiting.
+[140616964167424] Thread of gender 1 waiting.
+[140616804706048] Leaving bathroom... 
+[140616678815488] Thread of gender 1 waiting.
+[140617383802624] Leaving bathroom... 
+[140616955774720] Leaving bathroom... 
+Thread ID: 140616955774720
+Gender: Male
+Number of loops: 7
+Minimum time spent in the queue in seconds: 3.000000
+Average time spent in the queue in seconds: 1545.571429
+Maximum time spent in the queue in seconds: 9477.000000
+
+[140617232733952] Thread of gender 0 entered bathroom.
+[140617081665280] Leaving bathroom... 
+Thread ID: 140617081665280
+Gender: Male
+Number of loops: 7
+Minimum time spent in the queue in seconds: 6.000000
+Average time spent in the queue in seconds: 1526.428571
+Maximum time spent in the queue in seconds: 9799.000000
+
+[140616712386304] Leaving bathroom... 
+[140616737564416] Leaving bathroom... 
+Thread ID: 140616737564416
+Gender: Male
+Number of loops: 8
+Minimum time spent in the queue in seconds: 3.000000
+Average time spent in the queue in seconds: 1040.875000
+Maximum time spent in the queue in seconds: 7507.000000
+
+Thread ID: 140617383802624
+Gender: Male
+Number of loops: 7
+Minimum time spent in the queue in seconds: 7.000000
+Average time spent in the queue in seconds: 1518.571429
+Maximum time spent in the queue in seconds: 9733.000000
+
+[140616804706048] Thread of gender 0 entered bathroom.
+[140616804706048] Leaving bathroom... 
+Thread ID: 140616804706048
+Gender: Male
+Number of loops: 10
+Minimum time spent in the queue in seconds: 3.000000
+Average time spent in the queue in seconds: 1092.300000
+Maximum time spent in the queue in seconds: 9957.000000
+
+[140617232733952] Leaving bathroom...    Bathroom empty! Signaling...
+Thread ID: 140617232733952
+Gender: Male
+Number of loops: 8
+Minimum time spent in the queue in seconds: 4.000000
+Average time spent in the queue in seconds: 1266.250000
+Maximum time spent in the queue in seconds: 9804.000000
+
+[140616938989312] Thread of gender 1 entered bathroom.
+   I was the first to enter. Bathroom gender is now 1.
+[140616930596608] Thread of gender 1 entered bathroom.
+[140616964167424] Thread of gender 1 entered bathroom.
+[140616678815488] Thread of gender 1 entered bathroom.
+[140616930596608] Leaving bathroom... 
+[140616938989312] Leaving bathroom... 
+Thread ID: 140616938989312
+Gender: Female
+Number of loops: 9
+Minimum time spent in the queue in seconds: 4.000000
+Average time spent in the queue in seconds: 1105.666667
+Maximum time spent in the queue in seconds: 7234.000000
+
+[140616964167424] Leaving bathroom... 
+Thread ID: 140616964167424
+Gender: Female
+Number of loops: 6
+Minimum time spent in the queue in seconds: 9.000000
+Average time spent in the queue in seconds: 1696.333333
+Maximum time spent in the queue in seconds: 6292.000000
+
+[140616678815488] Leaving bathroom...    Bathroom empty! Signaling...
+[140616712386304] Thread of gender 0 entered bathroom.
+   I was the first to enter. Bathroom gender is now 0.
+[140617199163136] Thread of gender 0 entered bathroom.
+[140616712386304] Leaving bathroom... 
+[140617199163136] Leaving bathroom...    Bathroom empty! Signaling...
+Thread ID: 140617199163136
+Gender: Male
+Number of loops: 7
+Minimum time spent in the queue in seconds: 6.000000
+Average time spent in the queue in seconds: 1507.571429
+Maximum time spent in the queue in seconds: 9674.000000
+
+[140616930596608] Thread of gender 1 entered bathroom.
+   I was the first to enter. Bathroom gender is now 1.
+[140616712386304] Thread of gender 0 waiting.
+[140616930596608] Leaving bathroom...    Bathroom empty! Signaling...
+Thread ID: 140616930596608
+Gender: Female
+Number of loops: 9
+Minimum time spent in the queue in seconds: 9.000000
+Average time spent in the queue in seconds: 1089.777778
+Maximum time spent in the queue in seconds: 7247.000000
+
+[140616712386304] Thread of gender 0 entered bathroom.
+   I was the first to enter. Bathroom gender is now 0.
+[140616678815488] Thread of gender 1 waiting.
+[140616712386304] Leaving bathroom...    Bathroom empty! Signaling...
+Thread ID: 140616712386304
+Gender: Male
+Number of loops: 9
+Minimum time spent in the queue in seconds: 5.000000
+Average time spent in the queue in seconds: 1046.222222
+Maximum time spent in the queue in seconds: 7499.000000
+
+[140616678815488] Thread of gender 1 entered bathroom.
+   I was the first to enter. Bathroom gender is now 1.
+[140616678815488] Leaving bathroom...    Bathroom empty! Signaling...
+Thread ID: 140616678815488
+Gender: Female
+Number of loops: 7
+Minimum time spent in the queue in seconds: 23.000000
+Average time spent in the queue in seconds: 1307.571429
+Maximum time spent in the queue in seconds: 7185.000000
+
+Number of usages: 475
+Total time bathroom was vacant in seconds: 2642.000000
+Total time bathroom was occupied in seconds: 18661.000000
+Average Queue Length: 33.306575
+Average number of persons in the bathroom at the same time: 12.659932
+

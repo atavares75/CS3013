@@ -72,6 +72,7 @@ void Initialize() {
 	bathroom->population = 0;
 	bathroom->queueLength = 0;
 	pthread_mutex_init(&bathroom->lock, NULL);
+	pthread_mutex_init(&bathroom->print_lock, NULL);
 	pthread_cond_init(&bathroom->empty, NULL);
 
 	bathroom->numUsages = 0;
@@ -95,7 +96,7 @@ void Finalize() {
 	double avgQL = bathroom->totalQueueTimeOfPeople / bathroom->totalQueueTime;
 	printf("Average Queue Length: %f\n", avgQL);
 	double avgPIB = bathroom->totalOccupiedTimeOfPeople
-			/ bathroom->timeOccupied;
+			/ (1000000*bathroom->timeOccupied);
 	printf("Average number of persons in the bathroom at the same time: %f\n",
 			avgPIB);
 

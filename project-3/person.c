@@ -59,7 +59,8 @@ void * Individual(void * p){
 
 		Leave();
 	}
-
+	
+	pthread_mutex_lock(&bathroom->print_lock);
 	bathroom->totalQueueTimeOfPeople += prsn->totalWaitTime;
 	bathroom->totalOccupiedTimeOfPeople += prsn->totalStayTime;
 
@@ -78,6 +79,8 @@ void * Individual(void * p){
 	printf("Minimum time spent in the queue in seconds: %f\n", 1000000*prsn->minimumWaitTime);
 	printf("Average time spent in the queue in seconds: %f\n", 1000000*averageTimeSpentInQueue);
 	printf("Maximum time spent in the queue in seconds: %f\n\n", 1000000*prsn->maximumWaitTime);
+
+	pthread_mutex_unlock(&bathroom->print_lock);
 
 	return NULL;
 }
